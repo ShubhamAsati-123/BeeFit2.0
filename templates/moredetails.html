@@ -6,7 +6,7 @@
     <meta name="author" content="Anshulk">
     <meta name="description" content="Everything i learn about html.">
     <title>Sign In</title> 
-    <link rel="stylesheet" href="static/Login Page.css" type="text/css"> 
+    <link rel="stylesheet" href="static/moredetails.css" type="text/css"> 
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet"> 
 </head>
 <body>
@@ -17,11 +17,23 @@
 			
 			<div class="signup">
 				<form method="post" action="#">
-					<label for="chk" aria-hidden="true">Login</label>
-					<input type="text" name="User_name" placeholder="Username" required="">
-					<input type="password" name="password" placeholder="Password" required="">
+					<label for="chk" aria-hidden="true">More Details</label>
+					<input type="text" name="age" placeholder="age" required="">
+					<input type="text" name="weight" placeholder="weight" required="">
+					<input type="text" name="height" placeholder="height" required="">
+                    <select name="blood_group" id="blood_group" required="">
+                        <option value="A+ve">A+ve</option>
+                        <option value="A-ve">A-ve</option>
+                        <option value="B+ve">B+ve</option>
+                        <option value="B-ve">B-ve</option>
+                        <option value="AB+ve">AB+ve</option>
+                        <option value="AB-ve">AB-ve</option>
+                        <option value="O+ve">O+ve</option>
+                        <option value="O-ve">O-ve</option>
+                    </select>
+					<!-- <input type="text" name="password" placeholder="Password" required=""> -->
                     <!-- <input type="checkbox" name="rememberme" id="chckbx"> -->
-					<input type="submit" value="Login" name="Signup" class="btn">
+					<input type="submit" value="Submit" class="btn">
 				</form>
 			</div>
             <div class="login">

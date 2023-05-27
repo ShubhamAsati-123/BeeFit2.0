@@ -18,7 +18,7 @@
     <div class="header">
         <div class="headleft">
             <a href="{{url_for('mainpage')}}"><h3 class="headbtn">Home</h3></a>
-            <a href=""><h3 class="headbtn">How It Works</h3></a>
+            <a href="https://drive.google.com/drive/folders/131HIJxe_9pBbrWCrmK6-JOPRIKOZ2AUn?usp=sharing"><h3 class="headbtn">How It Works</h3></a>
             <div class="dropdown">
               <h3 class="headbtn">Profile</h3>
               <div class="dropdown-content">
@@ -30,7 +30,7 @@
     </div>
     
     <div class="container">
-        <form action="#" method="get">
+        <form action="#" method="post">
           
           <div class="profile">
               <h1>My Profile</h1>
@@ -51,7 +51,16 @@
               </div>
               <div id="BloodGroup"> 
                   <label for="bood group"> Blood group: </label><br>
-                  <input value="{{bloodGroup}}" class="input" type="text" id="blood group" name="Blood">
+                  <select value="{{bloodGroup}}" class="input" type="text" id="blood group" name="Blood" required="">
+                    <option value="A+ve">A+ve</option>
+                    <option value="A-ve">A-ve</option>
+                    <option value="B+ve">B+ve</option>
+                    <option value="B-ve">B-ve</option>
+                    <option value="AB+ve">AB+ve</option>
+                    <option value="AB-ve">AB-ve</option>
+                    <option value="O+ve">O+ve</option>
+                    <option value="O-ve">O-ve</option>
+                </select>
               </div>
               <div id="Age"> 
               <label for="age"> Age: </label><br>
@@ -65,7 +74,7 @@
               </div>
                   <div id="Weight"> 
                       <label for="weight"> Weight: </label><br>
-                      <input value="{{weight}}" class="input" type="text" id="Weight" name="Blood">
+                      <input value="{{weight}}" class="input" type="text" id="Weight" name="weight">
                   </div>
                   <div id="BMI"> 
                       <label for="BMI"> Your BMI: </label><br>
