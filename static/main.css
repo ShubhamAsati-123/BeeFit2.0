@@ -40,29 +40,28 @@
 .article{
     height: auto;
     margin: 1em 1em;
-}
-
+  }
+  
 .article h1{
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 3em;
+  display: block;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+  }
+  
+  .article{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/test.jpg');
+    background:linear-gradient(white, white, 0.5);
+    background-size: cover;
+    padding: 2em;
+    height: auto;
+    font-size: 1.5em;
+    text-align: justify;
 }
 
-.content{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.artent{
-  flex: 70%;
-  margin: 1.5em;
-  font-size: 1.5em;
-}
-.artimg{
-  flex: 30%;
-  height: 20em;
-  width: 10em;
-}
 #more {display: none; transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;}
 
 
@@ -164,7 +163,7 @@ p{
 	right: 0;
 	width: 80vmin;
 	height: 100%;
-	background-image: url("Test_Images/Exercise\ 1.jpg");
+	background-image: url("images/Exercise\ 1.jpg");
 	background-size: cover;
 	transition: .3s ease-in-out;
 }
@@ -174,7 +173,7 @@ p{
 	right: 0;
 	width: 80vmin;
 	height: 100%;
-	background-image: url("Test_Images/Diet\ 1.jpg");
+	background-image: url("images/Diet\ 1.jpg");
 	background-size: cover;
 	transition: .3s ease-in-out;
 }
@@ -184,7 +183,7 @@ p{
 	right: 0;
 	width: 80vmin;
 	height: 100%;
-	background-image: url("Test_Images/Tracking\ 1.jpg");
+	background-image: url("images/Tracking\ 1.jpg");
 	background-size: cover;
 	transition: .3s ease-in-out;
 }
@@ -989,3 +988,8 @@ input:checked ~ .tab-content {
   background: url(Images/wired-outline-1186-honeycombs.gif);
 }
 
+.ourteambtn{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}

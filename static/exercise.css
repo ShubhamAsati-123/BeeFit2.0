@@ -75,11 +75,11 @@
     /* background: #ffaf45; */
 } 
 .quotehead{
-    width: 25em;
+    width: 75em;
     background: #dadada75;
     padding: 0.2em;
     margin: 1em;
-    font-size: 2em;
+    font-size: 1em;
     box-shadow: -8px 0px black;
     border-radius: 10px;
 }
@@ -107,7 +107,7 @@ h2{
 }
 
 p{
-    /* text-align */
+    text-align:justify;
     font-size: 1.5em;
     margin: 1em 3em;
 }
@@ -346,4 +346,10 @@ html {
     to {
       transform: rotate(1turn);
     }
+  }
+
+  .ourteambtn{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
   }

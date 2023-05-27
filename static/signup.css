@@ -42,7 +42,7 @@ input{
 	height: 20px;
 	/* background: #e0dede; */
 	background: #000;
-	color: aqua;
+	color: white;
 	justify-content: center;
 	display: flex;
 	margin: 20px auto;
@@ -53,7 +53,7 @@ input{
 }
 button{
 	width: 60%;
-	height: 40px;
+	height: 30px;
 	margin: 10px auto;
 	justify-content: center;
 	display: block;
@@ -74,7 +74,7 @@ button:hover{
 }
 .login{
 	height: 600px;
-	background: #a0a0a0;
+	background: #DDDDDD;
 	border-radius: 60% / 10%;
 	transform: translateY(-180px);
 	transition: .8s ease-in-out;
@@ -117,4 +117,12 @@ button:hover{
   .loader::after {
     content: "";
 	background: url(Images/wired-outline-1186-honeycombs.gif);
+  }
+
+  .btn{
+	height: 3em;
+  }
+  .btn:hover{
+	background: rgb(55, 55, 55);
+	cursor: pointer;
   }

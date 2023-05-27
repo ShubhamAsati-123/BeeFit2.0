@@ -282,3 +282,19 @@ html {
     content: "";
     background: url(Images/wired-outline-1186-honeycombs.gif);
   }
+
+h1{
+  margin: 1em;
+}
+p{
+  text-align: justify;
+}
+iframe{
+  background-color: grey;
+  width: 600px;
+  height: 300px;
+}
+h2{
+  font-size: 2.5em;
+  margin-top: 1em;
+}

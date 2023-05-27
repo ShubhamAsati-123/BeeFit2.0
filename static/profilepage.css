@@ -15,6 +15,11 @@
     gap: 5em;
     /* font-size: 0.6em; */
   }
+  select{
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    font-size: 1.2em;
+  }
   .header{
     background: black;
     border: 2px solid black;
@@ -67,6 +72,7 @@
 }
 
 .image{
+    border: 5px solid black;
     border-radius:  100%;
     width: 300px;
     height: 300px;
@@ -96,7 +102,6 @@ button {
     transition-duration: 0.4s;
     background-color: #4CAF50; 
 }
-  
 button:hover {
 color: white;
 }
@@ -263,4 +268,14 @@ html {
     color: #3b5998;
     box-shadow: 0 0 24px 0 #3b5998
   }
+}
+
+.btn{
+  padding: 1em 3em;
+  border-radius: 1em;
+}
+.btn:hover{
+  background: #000;
+  color: white;
+
 }

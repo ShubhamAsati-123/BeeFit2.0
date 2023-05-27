@@ -332,3 +332,45 @@ html {
   background: url(Images/wired-outline-1186-honeycombs.gif);
 }
 
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+button{
+  padding: 1em 2em;
+  border-radius: 5em;
+  font-size: 1.1em;
+}
+button:hover{
+  border: 2px solid black;
+  background: #000;
+  color: whitesmoke;
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  transition: opacity 1s, visibility 1s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  
+ background: url(Images/wired-outline-1186-honeycombs.gif);
+}
+
+

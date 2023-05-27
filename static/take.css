@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #333333;
+    background: #ffffff;
     transition: opacity 0.75s, visibility 0.75s;
   }
   
@@ -24,21 +24,11 @@
   
   .loader::after {
     content: "";
-    width: 75px;
-    height: 75px;
-    border: 15px solid #dddddd;
-    border-top-color: #009578;
-    border-radius: 50%;
+
     animation: loading 0.75s ease infinite;
   }
   
-  @keyframes loading {
-    from {
-      transform: rotate(0turn);
-    }
-    to {
-      transform: rotate(1turn);
-    }
+
   }
 
 /* Navigation Bar */
@@ -499,4 +489,11 @@ button:hover:before {
 }
 button:hover{
   background: #363636fd;
+}
+
+
+.ourteambtn{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
