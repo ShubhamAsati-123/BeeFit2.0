@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Page</title>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='diet.css')}}">
+</head>
+<body>
+    <div class="loader"><img src="{{url_for('static',filename='images/wired-outline-1186-honeycombs.gif')}}" alt=""></div>
+
+    <div class="logo">
+        <img src="{{url_for('static',filename='images/logo.png')}}" alt="Beefit Logo" class="logo">
+    </div>
+
+    <div class="header">
+        <div class="headleft">
+            <a href="{{url_for('mainpage')}}"><h3 class="headbtn">Home</h3></a>
+            <a href=""><h3 class="headbtn">How It Works</h3></a>
+            <div class="dropdown">
+              <h3 class="headbtn">Profile</h3>
+              <div class="dropdown-content">
+              <a href="{{url_for('profilepage')}}">My Profile</a>
+              <a href="{{url_for('logout')}}">Logout</a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="quote">
+        <div class="quotehead">
+            <h3><span>"</span>If you keep good food in your fridge<br> you will eat good food.<span>"</span</h3>
+            <h4>-Errick McAdams</h4>
+        </div>
+    </div>
+
+    <h1>About</h1>
+    <p>Diet refers to the types and amounts of food that a person consumes regularly. 
+        A healthy and balanced diet includes a variety of foods that provide essential nutrients, vitamins, and minerals needed for good health. This includes whole grains, fruits, vegetables, lean protein sources, and healthy fats.
+        A person's dietary needs can vary depending on factors such as age, gender, activity level, and overall health. Some people may also have specific dietary restrictions or preferences based on cultural, religious, or ethical beliefs. 
+        Maintaining a healthy diet can help reduce the risk of chronic diseases such as heart disease, diabetes, and certain cancers. A registered dietitian can provide personalized recommendations for a healthy and balanced diet.</p>
+</div>
+
+<h1>Find Your PERFECT DIET here...</h1>
+
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+            <div class="text-card" id="card1">
+                <h3>ATKINS DIET</h3>
+                <P>The Atkins diet is a low-carb diet that was created by Dr. Robert Atkins in the 1970s. The diet is based on the idea that when you restrict your intake of carbohydrates, your body will start to burn fat for energy instead of glucose. This can lead to weight loss.Some potential benefits of the diet is weight loss , improved blood sugar control,reduced risk of heart disease.</P>
+                <a href="static/dietplans/Atkins.pdf"><img src="static/images/download-pdf.png" alt="Download" class="dnldimg"></a>
+            </div>
+            <div class="text-card" id="card2">
+                <h3>MEDITERRANEAN DIET</h3>
+                <P>The Mediterranean diet is a healthy eating plan that is based on the traditional cuisines of countries that border the Mediterranean Sea. It is rich in fruits, vegetables, whole grains, nuts, seeds, and olive oil. It also includes moderate amounts of fish, poultry, and dairy products, and low amounts of red meat.The Mediterranean diet has been shown to have a number of health benefits including Weight loss,reduced risk of heart disease,reduced risk of stroke,reduced risk of type 2 diabetes,reduced risk of some types of cancer.
+                </P>
+                <a href="static/dietplans/Mediterraneandiet.pdf"><img src="static/images/download-pdf.png" alt="Download" class="dnldimg"></a>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+            <div class="text-card" id="card3">
+                <h3>VEGAN DIET</h3>
+                <P>A vegan diet is a plant-based diet that excludes all animal products, including meat, poultry, fish, eggs, dairy, and honey. Vegans also avoid products that are made with animal products, such as leather, wool, and fur.There is a growing body of evidence to suggest that vegan diets can be healthy for people of all ages. Vegans tend to have lower rates of heart disease, stroke, type 2 diabetes, and some types of cancer than people who eat meat. They also tend to have lower body weight and lower blood pressure.</P>
+                <a href="static/dietplans/Vegan.pdf"><img src="static/images/download-pdf.png" alt="Download" class="dnldimg"></a>
+            </div>
+            <div class="text-card" id="card4">
+                <h3>DASH DIET</h3>
+                <P>The DASH diet is rich in fruits, vegetables, whole grains, and low-fat dairy products. It also includes lean protein and nuts. The DASH diet limits saturated fat, trans fat, cholesterol, sodium, and added sugars.The DASH diet has been shown to be effective in lowering blood pressure in people with high blood pressure.The DASH diet has also been shown to improve other risk factors for heart disease, such as cholesterol levels and blood sugar levels.
+                </P>
+                <a href="static/dietplans/dash.pdf"><img src="static/images/download-pdf.png" alt="Download" class="dnldimg"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+            <div class="text-card" id="card5">
+                <h3>PALEO DIET </h3>
+                <P>The paleo diet is a popular diet that is based on the idea of eating like our hunter-gatherer ancestors. The diet excludes processed foods, grains, legumes, dairy, and refined sugar. It focuses on whole, unprocessed foods that were available during the Paleolithic era, such as meat, fish, fruits, vegetables, nuts, and seeds.Some of the potential benefits of the paleo diet are weight loss,improved blood sugar control,reduced risk of heart disease,improved gut health,reduced inflammation and increased energy.</P>
+                <a href="static/dietplans/Paleo_Diet.pdf"><img src="static/images/download-pdf.png" alt="Download" class="dnldimg"></a>
+            </div>
+            <div class="text-card" id="card6">
+                <h3>WHOLE30 DIET</h3>
+                <P>The Whole30 diet is a 30-day elimination diet that is designed to help you identify food sensitivities and improve your overall health. The diet eliminates all grains, legumes, dairy, sugar, alcohol, and processed foods. It also limits certain fruits and vegetables.After 30 days, you can slowly reintroduce foods to see how your body reacts.The diet is designed to help you improve your overall health by reducing inflammation,improving gut health,weight loss and increased energy levels.</P>
+                    <a href="static/dietplans/Whole.pdf"><img src="static/images/download-pdf.png" alt="Download" class="dnldimg"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+            <div class="text-card" id="card7">
+                <h3>ZONE DIET</h3>
+                <P>The Zone diet is a high-protein, moderate-carbohydrate, and low-fat diet that was created by Dr. Barry Sears in the 1990s. The diet is based on the idea that eating a specific ratio of macronutrients can help improve your health and performance.The Zone diet recommends that you eat 40% of your calories from carbohydrates, 30% from protein, and 30% from fat. You should also eat small, frequent meals throughout the day.The Zone diet is a popular choice for athletes and people who are looking to improve their health. The diet has been shown to help with weight loss, improve blood sugar control, and reduce the risk of heart disease.
+                </P>
+                <a href="static/dietplans/zone.pdf"><img src="static/images/download-pdf.png" alt="Download" class="dnldimg"></a>
+            </div>
+            <div class="text-card" id="card8">
+                <h3>MIND DIET</h3>
+                <p>The MIND diet is a brain-healthy eating plan that combines elements of the Mediterranean diet and the DASH diet. It was developed by researchers at Rush University Medical Center in Chicago, Illinois, and published in the journal Alzheimer's & Dementia in 2015.The MIND diet emphasizes the consumption of foods that are rich in antioxidants, vitamins, and minerals, such as leafy green vegetables, berries, nuts, whole grains, fish, poultry, and olive oil. It also limits the intake of foods that are high in saturated fat, trans fat, sugar, and processed foods.The MIND diet is a healthy eating plan that can help reduce your risk of developing Alzheimer's disease.</p>
+                <a href="static/dietplans/mind diet.pdf"><img src="static/images/download-pdf.png" alt="Download" class="dnldimg"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="footer">
+    <div class="foot">
+
+        <div class="footele" id="fe2" >
+            <h1>Follow Us</h1>
+            <div class="icons">
+
+                <svg class="svg--source" width="0" height="0" aria-hidden="true">
+
+                <symbol id="svg--twitter" viewbox="0 -7 15 30">
+                  <path d="M15.36 3.434c-0.542 0.241-1.124 0.402-1.735 0.476 0.624-0.374 1.103-0.966 1.328-1.67-0.583 0.346-1.23 0.598-1.917 0.733-0.551-0.587-1.336-0.954-2.205-0.954-1.668 0-3.020 1.352-3.020 3.019 0 0.237 0.026 0.467 0.078 0.688-2.51-0.126-4.735-1.328-6.224-3.155-0.261 0.446-0.41 0.965-0.41 1.518 0 1.048 0.534 1.972 1.344 2.514-0.495-0.016-0.961-0.151-1.368-0.378 0 0.013 0 0.025 0 0.038 0 1.463 1.042 2.683 2.422 2.962-0.253 0.069-0.52 0.106-0.796 0.106-0.194 0-0.383-0.018-0.568-0.054 0.384 1.2 1.5 2.073 2.821 2.097-1.034 0.81-2.335 1.293-3.75 1.293-0.244 0-0.484-0.014-0.72-0.042 1.336 0.857 2.923 1.357 4.63 1.357 5.554 0 8.592-4.602 8.592-8.593 0-0.13-0.002-0.261-0.009-0.39 0.59-0.426 1.102-0.958 1.507-1.563z"
+                  />
+                </symbol>
+              
+                <symbol id="svg--facebook" viewbox="0 -7 16 30">
+                  <path d="M12 3.303h-2.285c-0.27 0-0.572 0.355-0.572 0.831v1.65h2.857v2.352h-2.857v7.064h-2.698v-7.063h-2.446v-2.353h2.446v-1.384c0-1.985 1.378-3.6 3.269-3.6h2.286v2.503z" />
+                </symbol>
+              
+                <symbol id="svg--github" viewbox="-30 -30 150 150">
+                  <path d="M61.896,52.548c-3.59,0-6.502,4.026-6.502,8.996c0,4.971,2.912,8.999,6.502,8.999
+                      c3.588,0,6.498-4.028,6.498-8.999C68.395,56.574,65.484,52.548,61.896,52.548z M84.527,29.132c0.74-1.826,0.777-12.201-3.17-22.132
+                      c0,0-9.057,0.993-22.76,10.396c-2.872-0.793-7.736-1.19-12.597-1.19s-9.723,0.396-12.598,1.189C19.699,7.993,10.645,7,10.645,7
+                      c-3.948,9.931-3.913,20.306-3.172,22.132C2.834,34.169,0,40.218,0,48.483c0,35.932,29.809,36.508,37.334,36.508
+                      c1.703,0,5.088,0.004,8.666,0.009c3.578-0.005,6.965-0.009,8.666-0.009C62.191,84.991,92,84.415,92,48.483
+                      C92,40.218,89.166,34.169,84.527,29.132z M46.141,80.574H45.86c-18.859,0-33.545-2.252-33.545-20.58
+                      c0-4.389,1.549-8.465,5.229-11.847c6.141-5.636,16.527-2.651,28.316-2.651c0.045,0,0.093-0.001,0.141-0.003
+                      c0.049,0.002,0.096,0.003,0.141,0.003c11.789,0,22.178-2.984,28.316,2.651c3.68,3.382,5.229,7.458,5.229,11.847
+                      C79.686,78.322,65,80.574,46.141,80.574z M30.104,52.548c-3.588,0-6.498,4.026-6.498,8.996c0,4.971,2.91,8.999,6.498,8.999
+                      c3.592,0,6.502-4.028,6.502-8.999C36.605,56.574,33.695,52.548,30.104,52.548z" />
+                </symbol>
+              
+                <symbol id="svg--pinterest" viewbox="-180 -180 850 850">
+                  <path d="M430.149,135.248C416.865,39.125,321.076-9.818,218.873,1.642
+                              C138.071,10.701,57.512,76.03,54.168,169.447c-2.037,57.029,14.136,99.801,68.399,111.84
+                              c23.499-41.586-7.569-50.676-12.433-80.802C90.222,77.367,252.16-6.718,336.975,79.313c58.732,59.583,20.033,242.77-74.57,223.71
+                              c-90.621-18.179,44.383-164.005-27.937-192.611c-58.793-23.286-90.013,71.135-62.137,118.072
+                              c-16.355,80.711-51.557,156.709-37.3,257.909c46.207-33.561,61.802-97.734,74.57-164.704
+                              c23.225,14.136,35.659,28.758,65.268,31.038C384.064,361.207,445.136,243.713,430.149,135.248z" />
+                </symbol>
+              
+              </svg>
+              
+              <div class="wrapper">
+              <div class="connect">
+              
+                <a href="" class="share twitter">
+                  <svg role="presentation" class="svg--icon">
+                    <use xlink:href="#svg--twitter" />
+                  </svg>
+                  <span class="clip">TWITTER</span>
+                </a>
+              
+                <a href="" rel="author" class="share facebook">
+                  <svg role="presentation" class="svg--icon">
+                    <use xlink:href="#svg--facebook" />
+                    <span class="clip">FACEBOOK</span>
+                  </svg>
+                </a>
+              
+                <a href="" class="share github">
+                  <svg role="presentation" class="svg--icon">
+                    <use xlink:href="#svg--github" />
+                    <span class="clip">GITHUB</span>
+                  </svg>
+                </a>
+              
+                <a href="" class="share  pinterest">
+                  <svg role="presentation" class="svg--icon">
+                    <use xlink:href="#svg--pinterest" />
+                    <span class="clip">PINTEREST</span>
+                  </svg>
+                </a>
+              
+              </div>
+              </div>
+
+            </div>
+
+
+        </div>
+        <div class="footele" id="fe3">
+            <h1>Contact Us</h1>
+            <a href="{{url_for('ourteam')}}" class="ourteambtn"><p style="font-size: 1.5rem;">Our Team</p></a>
+        </div>
+    </div>
+    
+    <div class="bf">
+      <h1>BEEFIT</h1>
+      <p> &#169;copyrights with our Team</p>
+    </div>
+
+</div>
+
+
+</body>
+
+<script type="text/javascript">
+    function load_iframes() {
+var vidDefer = document.getElementsByTagName('iframe');
+for (var i=0; i<vidDefer.length; i++) {
+if(vidDefer[i].getAttribute('data-src')) {
+vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+} } }
+ 
+ 
+    function isnumberinput(evt){
+        var ch = String.fromCharCode(evt.which);
+
+        if (!(/[0-9]/.test(ch))){
+            evt.preventDefault();
+        }
+    }
+
+    window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader--hidden");
+
+    loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
+        load_iframes();
+
+    });
+    });
+
+</script>
+</html>

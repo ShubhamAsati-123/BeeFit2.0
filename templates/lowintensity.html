@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low Intensity</title>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='lowintensity.css')}}" type="text/css"> 
+</head>
+<body>
+    <div class="loader"><img src="{{url_for('static',filename='images/wired-outline-1186-honeycombs.gif')}}" alt=""></div>
+
+    <div class="logo">
+        <img src="{{url_for('static',filename='images/logo.png')}}" alt="Beefit Logo" class="logo">
+    </div>
+
+    <div class="header">
+        <div class="headleft">
+            <a href="{{url_for('mainpage')}}"><h3 class="headbtn">Home</h3></a>
+            <a href=""><h3 class="headbtn">How It Works</h3></a>
+            <div class="dropdown">
+              <h3 class="headbtn">Profile</h3>
+              <div class="dropdown-content">
+              <a href="{{url_for('profilepage')}}">My Profile</a>
+              <a href="{{url_for('logout')}}">Logout</a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <h1>Low-intensity steady-state (LISS) training</h1>
+    <p>
+        Some tips for Liss training are starting with a short workout and gradually increase the duration as you get fitter and stop the exercise if you feel any pain.
+        Some of the benefits of LISS training are improved cardiovascular health,blood sugar control and mental health.It helps burn calories and reduces weight.It reduces the risk of chronic diseases and stress levels.
+
+    </p>
+    
+      
+<div>
+<h2>Video Resources</h2>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+            <iframe src="" height="300" width="600" data-src="https://www.youtube.com/embed/ImI63BUUPwU" framborder="1" ></iframe>
+            <iframe src="" height="300" width="600" data-src="https://www.youtube.com/embed/ngxt8aMJI_c" framborder="1"></iframe>         
+          
+        </div>
+    </div>
+</section>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+            <iframe src="" height="300" width="600" data-src="https://www.youtube.com/embed/h71RmQELrTQ" framborder="1"></iframe>
+            <iframe src="" height="300" width="600" data-src="https://www.youtube.com/embed/qfe4vzupWjI" framborder="1"></iframe>
+        </div>
+    </div>
+</section>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+            <iframe src="" height="300" width="600" data-src="https://www.youtube.com/embed/3SpPraOLJl4" framborder="1"></iframe>
+            <iframe src="" height="300" width="600" data-src="https://www.youtube.com/embed/iX03ei9yx2s" framborder="1"></iframe>
+        </div>
+    </div>
+</section>
+
+
+</body>
+<script type="text/javascript">
+    function load_iframes() {
+var vidDefer = document.getElementsByTagName('iframe');
+for (var i=0; i<vidDefer.length; i++) {
+if(vidDefer[i].getAttribute('data-src')) {
+vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+} } }
+ 
+ 
+    function isnumberinput(evt){
+        var ch = String.fromCharCode(evt.which);
+
+        if (!(/[0-9]/.test(ch))){
+            evt.preventDefault();
+        }
+    }
+
+
+    window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader--hidden");
+
+    loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
+        load_iframes();
+
+    });
+    });
+
+</script>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistance Exercise</title>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='resistanceexercise.css')}}" type="text/css"> 
+</head>
+<body>
+    
+	<div class="loader"><img src="{{url_for('static',filename='images/wired-outline-1186-honeycombs.gif')}}" alt=""></div>
+
+    <div class="logo">
+        <img src="{{url_for('static',filename='images/logo.png')}}" alt="Beefit Logo" class="logo">
+    </div>
+
+    <div class="header">
+        <div class="headleft">
+            <a href="{{url_for('mainpage')}}"><h3 class="headbtn">Home</h3></a>
+            <a href=""><h3 class="headbtn">How It Works</h3></a>
+            <div class="dropdown">
+              <h3 class="headbtn">Profile</h3>
+              <div class="dropdown-content">
+              <a href="{{url_for('profilepage')}}">My Profile</a>
+              <a href="{{url_for('logout')}}">Logout</a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>RESISTANCE EXERCISE</h1>
+    <P>
+        Resistance exercise is safe for most people, but it's important to start slowly and gradually increase the intensity and duration of your workouts over time. Some tips for the following exercise are warming up for 5-10 minutes before you start exercising,cooling down for 5-10 minutes after you finish exercising and performing 8-12 repetitions of each exercise.Start with a weight that is challenging but not too heavy and rest for 1-2 minutes between sets.
+        Resistance exercise is a great way to improve your overall health and well-being. It can help you lose weight or maintain a healthy weight,build muscle and strength,improve your bone health,mood,mental health,sleep quality and overall physical function.Reduce your risk of chronic diseases, such as heart disease, stroke, type 2 diabetes, and some types of cancer.    
+    </P>
+    
+      
+<div>
+<h2>Video Resources</h2>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/SZaggsg2zUY" style="background-color: grey;"></iframe>
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/CzyFv-0buVE" style="background-color: grey;"></iframe>
+                     
+          
+        </div>
+    </div>
+</section>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/uYkpTWfpFHA" style="background-color: grey;"></iframe>
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/H1F-UfC8Mb8" style="background-color: grey;"></iframe>
+            
+        </div>
+    </div>
+</section>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/l--sUtRAC08" style="background-color: grey;"></iframe>
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/YvrKIQ_Tbsk"style="background-color: grey;"></iframe>
+           
+        </div>
+    </div>
+</section>
+
+
+</div>  
+
+</body>
+<script type="text/javascript">
+    function load_iframes() {
+var vidDefer = document.getElementsByTagName('iframe');
+for (var i=0; i<vidDefer.length; i++) {
+if(vidDefer[i].getAttribute('data-src')) {
+vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+} } }
+ 
+ 
+    function isnumberinput(evt){
+        var ch = String.fromCharCode(evt.which);
+
+        if (!(/[0-9]/.test(ch))){
+            evt.preventDefault();
+        }
+    }
+
+
+    window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader--hidden");
+
+    loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
+        load_iframes();
+
+    });
+    });
+
+</script>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="static/main.css">
+
+</head>
+<body>
+  <div class="loadIt"><img src="static/images/wired-outline-1186-honeycombs.gif" alt=""></div>
+
+  <div class="logo">
+      <img src="{{url_for('static',filename='images/logo.png')}}" alt="Beefit Logo" class="logo">
+  </div>
+
+  <div class="header">
+      <div class="headleft">
+          <a href="{{url_for('mainpage')}}"><h3 class="headbtn">Home</h3></a>
+          <a href=""><h3 class="headbtn">How It Works</h3></a>
+          <div class="dropdown">
+            <h3 class="headbtn">Profile</h3>
+            <div class="dropdown-content">
+            <a href="{{url_for('profilepage')}}">My Profile</a>
+            <a href="{{url_for('logout')}}">Logout</a>
+            </div>
+          </div>
+      </div>
+  </div>
+
+    <div class="article">
+        <h1>{{head}}</h1>
+        <div class="content">
+          <div class="artent">
+            <p><b class="tdecor">{{less[0].title()}}</b>{{less[1:]}}<span id="dots">...</span><span id="more">{{more}}}</span></p>
+
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+          </div>
+          <img src="static/images/test.jpg" alt="Image" class="artimg">
+        </div>
+    </div>
+
+    <div class="features">
+        <h1>Explore Us</h1>
+    </div>
+
+    <div class="wrap animate pop">
+      <div class="overlay">
+        <div class="overlay-content animate slide-left delay-2">
+				<h1 class="animate slide-left pop delay-4 white xl">Exercises</h1>
+				<p class="animate slide-left pop delay-5" style="color: yellow; margin-bottom: 2.5rem;">Types of Exercises</p>
+			</div>
+			<div class="image-content_1 animate slide delay-5"></div>
+					<div class="dots animate">
+						<div class="dot animate slide-up delay-6"></div>
+						<div class="dot animate slide-up delay-7"></div>
+						<div class="dot animate slide-up delay-8"></div>
+					</div>
+        </div>
+        <div class="text">
+          <p><b class="tdecor">W</b>orkout, or exercise is a term often encountered by individuals of all ages. It refers to a wide spectrum of physical activities which give your body a boost of oxygen, blood flow, dopamine and serotonin, making it a great method of maintaining both physical and mental health.</p>
+          <p>Some of the most popularly practiced forms of exercise are aerobics, cardio workout, flexibility exercises, pilates, etc. Here at BEEFIT, you have the opportunity to explore the various forms of exercise, in a matter of few clicks!</p>
+
+          <button><a href="{{url_for('exercise')}}">Lets Explore</a></button>
+			</div>
+	</div>
+  <div class="wrap animate pop">
+    <div class="overlay">
+    <div class="overlay-content animate slide-left delay-2">
+      <h1 class="animate slide-left pop delay-4 white xl">Diet</h1>
+      <p class="animate slide-left pop delay-5" style="color: yellow; margin-bottom: 2.5rem;">Different Types of Deit Plan</p>
+    </div>
+    <div class="image-content_2 animate slide delay-5"></div>
+        <div class="dots animate">
+          <div class="dot animate slide-up delay-6"></div>
+          <div class="dot animate slide-up delay-7"></div>
+          <div class="dot animate slide-up delay-8"></div>
+        </div>
+    </div>
+    <div class="text">
+      <p><b class="tdecor">T</b>he key to a healthy body is eating 'right'. This implies following a diet plan constituting of nutritious edibles and a balanced diet, formulated for your fitness journey!</p> 
+      <p>Diets definitely don't follow the one-size-fits-all property, and depend on various contributing factors including but not limited to metabolism rates, age, levels of physical activity, etc. Keep reading to find multiple diet plans that you can choose based on your choice of food!</p>
+
+      <button><a href="{{url_for('diet')}}">Lets Explore</a></button>
+    </div>
+  </div>
+  <div class="wrap animate pop">
+    <div class="overlay">
+      <div class="overlay-content animate slide-left delay-2">
+				<h1 class="animate slide-left pop delay-4 white xl">Tracking</h1>
+				<p class="animate slide-left pop delay-5" style="color: yellow; margin-bottom: 2.5rem;">Tracking Your Calorie Intake and Burnt</p>
+			</div>
+			<div class="image-content_3 animate slide delay-5"></div>
+					<div class="dots animate">
+						<div class="dot animate slide-up delay-6"></div>
+						<div class="dot animate slide-up delay-7"></div>
+						<div class="dot animate slide-up delay-8"></div>
+					</div>
+		</div>
+			<div class="text">
+        <p><b class="tdecor">D</b>id you know? The amount of calories you are advised to intake corresponds to the amount of physical activity you perform on a daily basis. Based on your fitness goal, i.e. weight loss/weight gain/general fitness, the amount of calories to be consumed differs.</p>
+        <p>Our calorie tracker you can measure the amount of calories you are consuming, and the amount of calories that you burn, hence giving you the net calorie consumption.</p>
+
+        <button><a href="{{url_for('take')}}">Lets Explore</a></button>
+			</div>
+	</div>
+
+      <div class="features">
+        <h1>FEEDBACK</h1>
+    </div>
+    
+
+    <div class="emojifeedback">
+      <div class="feedback">
+        <label class="angry">
+            <input type="radio" value="1" name="feedback" />
+            <div>
+                <svg class="eye left">
+                    <use xlink:href="#eye">
+                </svg>
+                <svg class="eye right">
+                    <use xlink:href="#eye">
+                </svg>
+                <svg class="mouth">
+                    <use xlink:href="#mouth">
+                </svg>
+            </div>
+        </label>
+        <label class="sad">
+            <input type="radio" value="2" name="feedback" />
+            <div>
+                <svg class="eye left">
+                    <use xlink:href="#eye">
+                </svg>
+                <svg class="eye right">
+                    <use xlink:href="#eye">
+                </svg>
+                <svg class="mouth">
+                    <use xlink:href="#mouth">
+                </svg>
+            </div>
+        </label>
+        <label class="ok">
+            <input type="radio" value="3" name="feedback" />
+            <div></div>
+        </label>
+        <label class="good">
+            <input type="radio" value="4" name="feedback" checked />
+            <div>
+                <svg class="eye left">
+                    <use xlink:href="#eye">
+                </svg>
+                <svg class="eye right">
+                    <use xlink:href="#eye">
+                </svg>
+                <svg class="mouth">
+                    <use xlink:href="#mouth">
+                </svg>
+            </div>
+        </label>
+        <label class="happy">
+            <input type="radio" value="5" name="feedback" />
+            <div>
+                <svg class="eye left">
+                    <use xlink:href="#eye">
+                </svg>
+                <svg class="eye right">
+                    <use xlink:href="#eye">
+                </svg>
+            </div>
+        </label>
+      </div>
+            
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 4" id="eye">
+            <path d="M1,1 C1.83333333,2.16666667 2.66666667,2.75 3.5,2.75 C4.33333333,2.75 5.16666667,2.16666667 6,1"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 7" id="mouth">
+            <path d="M1,5.5 C3.66666667,2.5 6.33333333,1 9,1 C11.6666667,1 14.3333333,2.5 17,5.5"></path>
+        </symbol>
+      </svg>
+    </div>
+
+
+    <div class="footer">
+      <div class="foot">
+        <div class="footele" id="fe1">
+          <div class="row">
+            <div class="col">
+              <h1>FAQ</h1>
+              <div class="tabs">
+                <div class="tab">
+                  <input type="checkbox" id="chck1" class="chck">
+                  <label class="tab-label" for="chck1"> Can I follow the food diet plans if I have specific dietary restrictions?</label>
+                  <div class="tab-content">
+                    Yes, we offer customizable food diet plans that can be adjusted to accommodate various dietary restrictions, such as vegetarian, vegan, gluten-free, or lactose-free. Simply let us know about your specific needs, and we will provide appropriate alternatives.
+                  </div>
+                </div>
+                <div class="tab">
+                  <input type="checkbox" id="chck2" class="chck">
+                  <label class="tab-label" for="chck2"> How often should I exercise?</label>
+                  <div class="tab-content">
+                    The frequency of exercise depends on your fitness goals and current fitness level. It is generally recommended to engage in moderate-intensity aerobic activity for at least 150 minutes per week, along with strength training exercises two to three times a week. However, our fitness page will provide specific recommendations based on your individual circumstances.
+                  </div>
+                </div>
+                <div class="tab">
+                  <input type="checkbox" id="chck3" class="chck">
+                  <label class="tab-label" for="chck3">What is the importance of knowing my BMI?</label>
+                  <div class="tab-content">
+                    Knowing your BMI can provide a general indication of whether you are underweight, normal weight, overweight, or obese. It helps in understanding your body composition and setting appropriate fitness goals.
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+        </div>
+
+
+          <div class="footele" id="fe2">
+              <h1>Follow Us</h1>
+              <div class="icons">
+
+                  <svg class="svg--source" width="0" height="0" aria-hidden="true">
+
+                  <symbol id="svg--twitter" viewbox="0 -7 15 30">
+                    <path d="M15.36 3.434c-0.542 0.241-1.124 0.402-1.735 0.476 0.624-0.374 1.103-0.966 1.328-1.67-0.583 0.346-1.23 0.598-1.917 0.733-0.551-0.587-1.336-0.954-2.205-0.954-1.668 0-3.020 1.352-3.020 3.019 0 0.237 0.026 0.467 0.078 0.688-2.51-0.126-4.735-1.328-6.224-3.155-0.261 0.446-0.41 0.965-0.41 1.518 0 1.048 0.534 1.972 1.344 2.514-0.495-0.016-0.961-0.151-1.368-0.378 0 0.013 0 0.025 0 0.038 0 1.463 1.042 2.683 2.422 2.962-0.253 0.069-0.52 0.106-0.796 0.106-0.194 0-0.383-0.018-0.568-0.054 0.384 1.2 1.5 2.073 2.821 2.097-1.034 0.81-2.335 1.293-3.75 1.293-0.244 0-0.484-0.014-0.72-0.042 1.336 0.857 2.923 1.357 4.63 1.357 5.554 0 8.592-4.602 8.592-8.593 0-0.13-0.002-0.261-0.009-0.39 0.59-0.426 1.102-0.958 1.507-1.563z"
+                    />
+                  </symbol>
+                
+                  <symbol id="svg--facebook" viewbox="0 -7 16 30">
+                    <path d="M12 3.303h-2.285c-0.27 0-0.572 0.355-0.572 0.831v1.65h2.857v2.352h-2.857v7.064h-2.698v-7.063h-2.446v-2.353h2.446v-1.384c0-1.985 1.378-3.6 3.269-3.6h2.286v2.503z" />
+                  </symbol>
+                
+                  <symbol id="svg--github" viewbox="-30 -30 150 150">
+                    <path d="M61.896,52.548c-3.59,0-6.502,4.026-6.502,8.996c0,4.971,2.912,8.999,6.502,8.999
+                        c3.588,0,6.498-4.028,6.498-8.999C68.395,56.574,65.484,52.548,61.896,52.548z M84.527,29.132c0.74-1.826,0.777-12.201-3.17-22.132
+                        c0,0-9.057,0.993-22.76,10.396c-2.872-0.793-7.736-1.19-12.597-1.19s-9.723,0.396-12.598,1.189C19.699,7.993,10.645,7,10.645,7
+                        c-3.948,9.931-3.913,20.306-3.172,22.132C2.834,34.169,0,40.218,0,48.483c0,35.932,29.809,36.508,37.334,36.508
+                        c1.703,0,5.088,0.004,8.666,0.009c3.578-0.005,6.965-0.009,8.666-0.009C62.191,84.991,92,84.415,92,48.483
+                        C92,40.218,89.166,34.169,84.527,29.132z M46.141,80.574H45.86c-18.859,0-33.545-2.252-33.545-20.58
+                        c0-4.389,1.549-8.465,5.229-11.847c6.141-5.636,16.527-2.651,28.316-2.651c0.045,0,0.093-0.001,0.141-0.003
+                        c0.049,0.002,0.096,0.003,0.141,0.003c11.789,0,22.178-2.984,28.316,2.651c3.68,3.382,5.229,7.458,5.229,11.847
+                        C79.686,78.322,65,80.574,46.141,80.574z M30.104,52.548c-3.588,0-6.498,4.026-6.498,8.996c0,4.971,2.91,8.999,6.498,8.999
+                        c3.592,0,6.502-4.028,6.502-8.999C36.605,56.574,33.695,52.548,30.104,52.548z" />
+                  </symbol>
+                
+                  <symbol id="svg--pinterest" viewbox="-180 -180 850 850">
+                    <path d="M430.149,135.248C416.865,39.125,321.076-9.818,218.873,1.642
+                                C138.071,10.701,57.512,76.03,54.168,169.447c-2.037,57.029,14.136,99.801,68.399,111.84
+                                c23.499-41.586-7.569-50.676-12.433-80.802C90.222,77.367,252.16-6.718,336.975,79.313c58.732,59.583,20.033,242.77-74.57,223.71
+                                c-90.621-18.179,44.383-164.005-27.937-192.611c-58.793-23.286-90.013,71.135-62.137,118.072
+                                c-16.355,80.711-51.557,156.709-37.3,257.909c46.207-33.561,61.802-97.734,74.57-164.704
+                                c23.225,14.136,35.659,28.758,65.268,31.038C384.064,361.207,445.136,243.713,430.149,135.248z" />
+                  </symbol>
+                
+                </svg>
+                
+                <div class="wrapper">
+                <div class="connect">
+                
+                  <a href="" class="share twitter">
+                    <svg role="presentation" class="svg--icon">
+                      <use xlink:href="#svg--twitter" />
+                    </svg>
+                    <span class="clip">TWITTER</span>
+                  </a>
+                
+                  <a href="" rel="author" class="share facebook">
+                    <svg role="presentation" class="svg--icon">
+                      <use xlink:href="#svg--facebook" />
+                      <span class="clip">FACEBOOK</span>
+                    </svg>
+                  </a>
+                
+                  <a href="" class="share github">
+                    <svg role="presentation" class="svg--icon">
+                      <use xlink:href="#svg--github" />
+                      <span class="clip">GITHUB</span>
+                    </svg>
+                  </a>
+                
+                  <a href="" class="share  pinterest">
+                    <svg role="presentation" class="svg--icon">
+                      <use xlink:href="#svg--pinterest" />
+                      <span class="clip">PINTEREST</span>
+                    </svg>
+                  </a>
+                
+                </div>
+                </div>
+
+              </div>
+
+
+          </div>
+          <div class="footele" id="fe3">
+              <h1>Contact Us</h1>
+              <a href="{{url_for('ourteam')}}" class="ourteambtn"><p style="font-size: 1.5rem;">Our Team</p></a>
+          </div>
+      </div>
+      
+      <div class="bf">
+        <h1>BEEFIT</h1>
+        <p> &#169;copyrights with our Team</p>
+      </div>
+
+  </div>
+  
+</body>
+
+<script type="text/javascript">
+  function load_iframes() {
+var vidDefer = document.getElementsByTagName('iframe');
+for (var i=0; i<vidDefer.length; i++) {
+if(vidDefer[i].getAttribute('data-src')) {
+vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+} } }
+
+
+  function isnumberinput(evt){
+      var ch = String.fromCharCode(evt.which);
+
+      if (!(/[0-9]/.test(ch))){
+          evt.preventDefault();
+      }
+  }
+
+
+  window.addEventListener("load", () => {
+  const loader = document.querySelector(".loadIt");
+
+  loader.classList.add("loadIt--hidden");
+
+  loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+      load_iframes();
+
+  });
+  });
+
+</script>
+<script>
+  ( function( window ) {
+'use strict';
+function classReg( className ) {
+  return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+}
+var hasClass, addClass, removeClass;
+
+if ( 'classList' in document.documentElement ) {
+  hasClass = function( elem, c ) {
+    return elem.classList.contains( c );
+  };
+  addClass = function( elem, c ) {
+    elem.classList.add( c );
+  };
+  removeClass = function( elem, c ) {
+    elem.classList.remove( c );
+  };
+}
+else {
+  hasClass = function( elem, c ) {
+    return classReg( c ).test( elem.className );
+  };
+  addClass = function( elem, c ) {
+    if ( !hasClass( elem, c ) ) {
+      elem.className = elem.className + ' ' + c;
+    }
+  };
+  removeClass = function( elem, c ) {
+    elem.className = elem.className.replace( classReg( c ), ' ' );
+  };
+}
+
+function toggleClass( elem, c ) {
+  var fn = hasClass( elem, c ) ? removeClass : addClass;
+  fn( elem, c );
+}
+var classie = {
+  hasClass: hasClass,
+  addClass: addClass,
+  removeClass: removeClass,
+  toggleClass: toggleClass,
+  has: hasClass,
+  add: addClass,
+  remove: removeClass,
+  toggle: toggleClass
+};
+if ( typeof define === 'function' && define.amd ) {
+  define( classie );
+} else {
+  window.classie = classie;
+}
+})( window );
+var $ = function(selector){
+  return document.querySelector(selector);
+}
+var accordion = $('.accordion');
+accordion.addEventListener("click",function(e) {
+  e.stopPropagation();
+  e.preventDefault();
+  if(e.target && e.target.nodeName == "A") {
+    var classes = e.target.className.split(" ");
+    if(classes) {
+      for(var x = 0; x < classes.length; x++) {
+        if(classes[x] == "accordionTitle") {
+          var title = e.target;
+          var content = e.target.parentNode.nextElementSibling;
+          classie.toggle(title, 'accordionTitleActive');
+          if(classie.has(content, 'accordionItemCollapsed')) {
+            if(classie.has(content, 'animateOut')){
+              classie.remove(content, 'animateOut');
+            }
+            classie.add(content, 'animateIn');
+          }else{
+             classie.remove(content, 'animateIn');
+             classie.add(content, 'animateOut');
+          }
+          classie.toggle(content, 'accordionItemCollapsed');      
+        }
+      }
+    }  
+  }
+});
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+  
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+</html>

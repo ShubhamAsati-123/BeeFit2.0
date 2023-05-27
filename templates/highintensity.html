@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High intensity</title>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='highintensity.css')}}" type="text/css"> 
+</head>
+<body>
+    <div class="loader"><img src="{{url_for('static',filename='images/wired-outline-1186-honeycombs.gif')}}" alt=""></div>
+
+    <div class="logo">
+        <img src="{{url_for('static',filename='images/logo.png')}}" alt="Beefit Logo" class="logo">
+    </div>
+
+    <div class="header">
+        <div class="headleft">
+            <a href="{{url_for('mainpage')}}"><h3 class="headbtn">Home</h3></a>
+            <a href=""><h3 class="headbtn">How It Works</h3></a>
+            <div class="dropdown">
+              <h3 class="headbtn">Profile</h3>
+              <div class="dropdown-content">
+              <a href="{{url_for('profilepage')}}">My Profile</a>
+              <a href="{{url_for('logout')}}">Logout</a>
+              </div>
+            </div>
+        </div>
+    </div>
+    
+    <h1> High-intensity interval training (HIIT)</h1>
+    <p>
+        HIIT workouts can be challenging, but they are also very effective. If you are new to HIIT, it is important to start slowly and gradually increase the intensity and duration of your workouts. You should also listen to your body and stop if you feel any pain.
+        Some of the benefits of HIIT are improved cardiovascular health,athletic performance and mental health.It also burn calories,build muscles and reduces the risk of chronic diseases.
+
+    </p>
+    
+      
+<div>
+<h2>Video Resources</h2>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/jD66Gc4-Hmc" style="background-color: grey;"></iframe>
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/RcLz_atcq8w" style="background-color: grey;"></iframe>
+                     
+          
+        </div>
+    </div>
+</section>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/_eB3z1mhlBw" style="background-color: grey;"></iframe>
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/sT_a9WdfkqQ" style="background-color: grey;"></iframe>
+            
+        </div>
+    </div>
+</section>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/sszmOng5tiw" style="background-color: grey;"></iframe>
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/jWCm9piAwAU" style="background-color: grey;"></iframe>
+           
+        </div>
+    </div>
+</section>
+
+
+
+</body>
+<script type="text/javascript">
+    function load_iframes() {
+var vidDefer = document.getElementsByTagName('iframe');
+for (var i=0; i<vidDefer.length; i++) {
+if(vidDefer[i].getAttribute('data-src')) {
+vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+} } }
+ 
+ 
+    function isnumberinput(evt){
+        var ch = String.fromCharCode(evt.which);
+
+        if (!(/[0-9]/.test(ch))){
+            evt.preventDefault();
+        }
+    }
+
+
+    window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader--hidden");
+
+    loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
+        load_iframes();
+
+    });
+    });
+
+</script>
+</html>

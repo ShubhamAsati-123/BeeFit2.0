@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legs</title>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='legs.css')}}">
+</head>
+<body>
+    <div class="loader"><img src="{{url_for('static',filename='images/wired-outline-1186-honeycombs.gif')}}" alt=""></div>
+
+    <div class="logo">
+        <img src="{{url_for('static',filename='images/logo.png')}}" alt="Beefit Logo" class="logo">
+    </div>
+
+    <div class="header">
+        <div class="headleft">
+            <a href="{{url_for('mainpage')}}"><h3 class="headbtn">Home</h3></a>
+            <a href=""><h3 class="headbtn">How It Works</h3></a>
+            <div class="dropdown">
+              <h3 class="headbtn">Profile</h3>
+              <div class="dropdown-content">
+              <a href="{{url_for('profilepage')}}">My Profile</a>
+              <a href="{{url_for('logout')}}">Logout</a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>LEG EXERCISE</h2>
+    <p>
+        Some of the benefit of leg exercises are that it build muscle and strength in lower body which can enhance your performance in sports and other activities. It improves your cardiovascular health, body posture and balance. It helps burn calories, reduce weight and also reduces the risk of injury. It increases the mobility and range of the of motion of the leg which helps to increase your flexibility. It will boost your mood and energy levels as they release endorphins which are hormones that have mood boosting effects.
+Warm up before you start exercising and cool down after the activity is over. Hydrate yourself properly and have a healthy diet. Don't overdo any activity and use weights which are suitable for you.
+    </p>
+    <!-- <P>There are many different types of aerobic exercises like walking,running,swimming,biking,dancing,rowing,cross-country skiing etc.Some of the benefits of aerobic exercises are like immproving cardiovascular health, reducing risk of chronic diseases,helping you lose weight or maintain a healthy weight,improving mood and mental health,strengthening bones and muscles,improving balance and coordination,increasing energy levels,improving sleep quality and reducing stress levels. -->
+        <!-- </P> -->
+    
+</div>
+
+<h2>Video Resources</h2>
+
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+            <iframe src="" height="300" width="600" data-src="https://www.youtube.com/embed/Smim7-qG8Ls" framborder="1"></iframe>
+            <iframe src="" height="300" width="600" data-src="https://www.youtube.com/embed/G18kehKXlRM" framborder="1"></iframe>
+           
+        </div>
+    </div>
+</section>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+            <iframe src="" height="300" width="600" data-src="https://www.youtube.com/embed/uYkpTWfpFHA" framborder="1"></iframe>
+            <iframe src="" height="300" width="600" data-src="https://www.youtube.com/embed/Jg61m0DwURs" framborder="1"></iframe>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+</body>
+
+<script type="text/javascript">
+function load_iframes() {
+var vidDefer = document.getElementsByTagName('iframe');
+for (var i=0; i<vidDefer.length; i++) {
+if(vidDefer[i].getAttribute('data-src')) {
+vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+} } }
+
+
+function isnumberinput(evt){
+    var ch = String.fromCharCode(evt.which);
+
+    if (!(/[0-9]/.test(ch))){
+        evt.preventDefault();
+    }
+}
+
+
+window.addEventListener("load", () => {
+const loader = document.querySelector(".loader");
+
+loader.classList.add("loader--hidden");
+
+loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+    load_iframes();
+
+});
+});
+
+</script>
+</html>

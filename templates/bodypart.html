@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Parts</title>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='bodypart.css')}}">
+    
+</head>
+<body>
+    <div class="loader"><img src="{{url_for('static',filename='images/wired-outline-1186-honeycombs.gif')}}" alt=""></div>
+
+    <div class="logo">
+        <img src="{{url_for('static',filename='images/logo.png')}}" alt="Beefit Logo" class="logo">
+    </div>
+
+    <div class="header">
+        <div class="headleft">
+            <a href="{{url_for('mainpage')}}"><h3 class="headbtn">Home</h3></a>
+            <a href=""><h3 class="headbtn">How It Works</h3></a>
+            <div class="dropdown">
+              <h3 class="headbtn">Profile</h3>
+              <div class="dropdown-content">
+              <a href="{{url_for('profilepage')}}">My Profile</a>
+              <a href="{{url_for('logout')}}">Logout</a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <h1></h1>
+    <p>
+        This category involves some specific body parts which are highly targeted during core exercise.The category focuses on chest, back, shoulders, arms, legs and back exercises. The further sub category describes more about their benefits, importance and also consist of video resources which provide the best exercises related to a specific body part.
+    </p>
+   
+</div>
+
+<h2>Choose the body part upon which you want to workout</h2>
+
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+                <div class="text-card" id="card1">
+                    <h3>Chest Exercise</h3>
+                    <p>
+                        Chest exercises are a great way to build muscle and strength in the chest area. There are many different chest exercises that can be done, both with and without weights.Some of the most popular chest exercises are different types of dumbbell press and pushups.
+                    </p>
+                    <!-- <p>Aerobic exercise is any type of physical activity that gets your heart rate up and your blood flowing. It's a great way to improve your cardiovascular health, reduce your risk of chronic diseases, and lose weight or maintain a healthy weight.</p> -->
+                    <a href="{{url_for('b4')}}">
+                        <div class="btn">
+                            <button>Explore</button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="text-card" id="card2">
+                    <h3>Back Exercise</h3>
+                    <p>
+                        Back exercises are a great way to improve your posture, prevent back pain, and build muscle mass. Some of the most common back exercise are pull-ups, deadlifts and bent over rows.
+                    </p>
+                    <!-- <p>Resistance exercise, also known as strength training or weight training, is a type of physical activity that uses resistance to build strength, muscle mass, and endurance. Resistance can be provided by free weights, weight machines, or your own body weight.</p> -->
+                    <a href="{{url_for('b3')}}">
+                        <div class="btn">
+                            <button>Explore</button>
+                        </div>
+                    </a>
+                </div>
+
+        </div>
+    </div>
+</section>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+                <div class="text-card" id="card3">
+                    <h3>Shoulder Exercise
+                    </h3>
+                    <p>Shoulder exercises are a great way to improve your posture, prevent shoulder pain, and build muscle mass. There are many different types of shoulder exercises like lateral raises, front raises,bent over rows and many more, so you can find ones that are appropriate for your fitness level and goals.</p>
+                    <!-- <p>Circuit training is a type of workout that involves completing a series of exercises in a circuit, with little or no rest between exercises. The goal of circuit training is to work multiple muscle groups in a short period of time. -->
+                        <!-- Circuit training is a great way to improve your cardiovascular fitness, strength, and endurance.</p> -->
+                        <a href="{{url_for('b6')}}">
+                            <div class="btn">
+                                <button>Explore</button>
+                            </div>
+                        </a>
+                </div>
+                <div class="text-card" id="card4">
+                    <h3>Arms Exercise</h3>
+                    <p>
+                        Arms exercises are a great way to tone and strengthen your biceps, triceps, and forearms. There are many different types of arms exercises like bicep curls, triceps extensions, forearm curls and many more, so you can find ones that are appropriate for your fitness level and goals.
+                    </p>
+                    <!-- <p>Flexibility exercise is a type of physical activity that helps to increase the range of motion in your joints. It can be done through a variety of activities, including stretching, yoga, and Pilates.</p> -->
+                    <a href="{{url_for('b2')}}">
+                        <div class="btn">
+                            <button>Explore</button>
+                        </div>
+                    </a>
+                </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+
+                <div class="text-card" id="card5">
+                    <h3>Leg Exercise </h3>
+                    <p>Leg exercises are a great way to improve your overall fitness and health.Leg exercises can be done without no equipments or one can also join gym.Different types of leg exercises are squats, lunges, deadlifts, leg presses, leg extensions and many more.</p>
+                    <!-- <p>High-intensity interval training (HIIT) is a type of exercise that involves short bursts of intense activity followed by brief periods of rest or low-intensity activity. HIIT workouts are typically shorter than traditional cardio workouts, but they can be just as effective, if not more so, at improving fitness.</p> -->
+                    <a href="{{url_for('b5')}}">
+                        <div class="btn">
+                            <button>Explore</button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="text-card" id="card6">
+                    <h3>Abs Exercise</h3>
+                    <p>
+                        Abs exercises are a type of physical activity that targets the abdominal muscles.Some of the common abs exercises are crunches, leg raises, planks, hanging leg lifts and many more.
+                    </p>
+                    <!-- <p>Low-intensity steady-state (LISS) training is a type of cardiovascular exercise that involves working out at a moderate intensity for an extended period of time. LISS is a great way to improve your cardiovascular fitness, burn calories, and lose weight.</p> -->
+                    <a href="{{url_for('b1')}}">
+                        <div class="btn">
+                            <button>Explore</button>
+                        </div>
+                    </a>
+                </div>
+
+        </div>
+    </div>
+</section>
+
+</body>
+
+<script type="text/javascript">
+function load_iframes() {
+var vidDefer = document.getElementsByTagName('iframe');
+for (var i=0; i<vidDefer.length; i++) {
+if(vidDefer[i].getAttribute('data-src')) {
+vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+} } }
+
+
+function isnumberinput(evt){
+    var ch = String.fromCharCode(evt.which);
+
+    if (!(/[0-9]/.test(ch))){
+        evt.preventDefault();
+    }
+}
+
+
+window.addEventListener("load", () => {
+const loader = document.querySelector(".loader");
+
+loader.classList.add("loader--hidden");
+
+loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+    load_iframes();
+
+});
+});
+
+</script>
+</html>

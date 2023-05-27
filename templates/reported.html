@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+
+.grid-container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 75vh;
+  gap: 50px;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  
+  padding: 50px;
+}
+
+  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var x={{data | tojson}};
+        var y=[['date', 'calorie in', 'calorie out']]
+        for(let i=0;i<x.length;i++)
+        y.push(x[i]);
+        console.log(y);
+       
+        // var data = google.visualization.arrayToDataTable([
+        //   ['date', 'calorie in', 'calorie out'],
+        //   ['1', 1000, 400],
+        //   ['2', 1170, 460],
+        //   ['3', 660, 1120],
+        //   ['4', 1030, 540]
+        // ]);
+        var data = google.visualization.arrayToDataTable(y);
+                var options = {
+          chart: {
+            title: 'Company Performance',
+            subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+          },
+          bars: 'vertical' // Required for Material Bar Charts.
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+       
+      }
+    </script>
+  </head>
+  <body class="grid-container">
+    <div id="barchart_material"  style="width: 600px; height: 500px;"></div>
+   
+
+  </body>
+</html>
+

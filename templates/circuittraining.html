@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circuit Training</title>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='circuittraining.css')}}" type="text/css"> 
+</head>
+<body>
+    
+    <div class="loader"><img src="{{url_for('static',filename='images/wired-outline-1186-honeycombs.gif')}}" alt=""></div>
+
+    <div class="logo">
+        <img src="{{url_for('static',filename='images/logo.png')}}"  alt="Beefit Logo" class="logo">
+    </div>
+
+    <div class="header">
+        <div class="headleft">
+            <a href="{{url_for('mainpage')}}"><h3 class="headbtn">Home</h3></a>
+            <a href=""><h3 class="headbtn">How It Works</h3></a>
+            <div class="dropdown">
+              <h3 class="headbtn">Profile</h3>
+              <div class="dropdown-content">
+              <a href="{{url_for('profilepage')}}">My Profile</a>
+              <a href="{{url_for('logout')}}">Logout</a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>CIRCUIT TRAINING</h1>
+    <P>To start the circuit, begin with the first exercise and perform it for the prescribed number of repetitions or time. Then, immediately move on to the next exercise and repeat. Continue until you have completed all of the exercises in the circuit.Once you have completed the circuit, take a short rest (30-60 seconds) and then repeat the circuit for the desired number of sets.Some tips for circuit training are as followed: Warming up before you start your workout,using a weight that is challenging but not too heavy,performing each exercise with good form,taking short rests between exercises and drinking plenty of water before, during, and after your workout.
+        Some of the benifits of circuit training are improving cardiovascular fitness,increasing strength and endurance,improving flexibility and mood and reducing stress.       
+      
+<div>
+<h2>Video Resources</h2>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/zZ1MqieP42A" style="background-color: grey;"></iframe>
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/c2hj0fMk8Nc" style="background-color: grey;"></iframe>
+                     
+          
+        </div>
+    </div>
+</section>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/jPdft5H34C8" style="background-color: grey;"></iframe>
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/L8Fbfx-Uv6I" style="background-color: grey;"></iframe>
+            
+        </div>
+    </div>
+</section>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/kTJ5b0RkKX8" style="background-color: grey;"></iframe>
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/yOK85lZpXwU" style="background-color: grey;"></iframe>
+           
+        </div>
+    </div>
+</section>
+
+
+
+
+</body>
+<script type="text/javascript">
+    function load_iframes() {
+var vidDefer = document.getElementsByTagName('iframe');
+for (var i=0; i<vidDefer.length; i++) {
+if(vidDefer[i].getAttribute('data-src')) {
+vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+} } }
+ 
+ 
+    function isnumberinput(evt){
+        var ch = String.fromCharCode(evt.which);
+
+        if (!(/[0-9]/.test(ch))){
+            evt.preventDefault();
+        }
+    }
+
+
+    window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader--hidden");
+
+    loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
+        load_iframes();
+
+    });
+    });
+
+</script>
+</html>

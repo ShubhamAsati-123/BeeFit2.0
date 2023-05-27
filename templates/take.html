@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <link rel="stylesheet" href="static/take.css">
+    <!-- <script type="text/javascript" src="{{url_for('static',filename='take.js')}}"></script> -->
+    <title>Tracking</title>
+</head>
+
+<body>
+  <div class="loader"><img src="static/images/wired-outline-1186-honeycombs.gif" alt=""></div>
+
+  <div class="logo">
+      <img src="static/images/logo.png" alt="Beefit Logo" class="logo">
+  </div>
+
+  <div class="header">
+      <div class="headleft">
+          <a href="{{url_for('mainpage')}}"><h3 class="headbtn">Home</h3></a>
+          <a href=""><h3 class="headbtn">How It Works</h3></a>
+          <div class="dropdown">
+            <h3 class="headbtn">Profile</h3>
+            <div class="dropdown-content">
+            <a href="{{url_for('profilepage')}}">My Profile</a>
+            <a href="{{url_for('logout')}}">Logout</a>
+            </div>
+          </div>
+      </div>
+  </div>
+    
+
+    <!--Make sure the form has the autocomplete function switched off-->
+
+    <h1 id="heading">Tracking Your Health</h1>
+  
+    <div class="container">
+        <div autocomplete="off" class="autocomplete">
+            Food List: <input id="myInput" type="text" name="myCountry" placeholder="Food List">
+        </div>
+    
+        <div id="mycalorie" class="calorie">
+            Serving: <input type="text" name="myCountry" placeholder="Serving">
+        </div>
+        <div class="button">
+            <button onclick="addelements()" class="btn">Add</button>
+        </div>
+    </div>
+    
+    <form action="">
+        <ul class="complete" style="position: relative" id="f"></ul>
+    </form>
+
+    <div class="container">
+        <div autocomplete1="off" class="autocomplete1" >
+            Exercise: <input id="myInput1" type="text" name="myCountry" placeholder="Exercise">
+        </div>
+
+        <div id="mycalorie1" class="calorie">
+            Time: <input type="text" name="myCountry" placeholder="Time(in Min)">
+        </div>
+
+        <div class="button">
+            <button onclick="addelements1()" class="btn">Add</button>
+        </div>
+    </div>
+    
+    
+    <form action="">
+      <ul class="complete1" style="position: relative" id="e"></ul>
+    </form>
+    <div class="btn">
+      <!-- <a href="{{url_for('trackingpage')}}"><button id="analyse">Analyse</button></a> -->
+      <a href="{{url_for('trackingpage')}}"><button id="analyse">Analyse</button></a>
+    </div>
+    
+    
+    <div class="footer">
+      <div class="foot">
+  
+          <div class="footele" id="fe2" >
+              <h1>Follow Us</h1>
+              <div class="icons">
+  
+                  <svg class="svg--source" width="0" height="0" aria-hidden="true">
+  
+                  <symbol id="svg--twitter" viewbox="0 -7 15 30">
+                    <path d="M15.36 3.434c-0.542 0.241-1.124 0.402-1.735 0.476 0.624-0.374 1.103-0.966 1.328-1.67-0.583 0.346-1.23 0.598-1.917 0.733-0.551-0.587-1.336-0.954-2.205-0.954-1.668 0-3.020 1.352-3.020 3.019 0 0.237 0.026 0.467 0.078 0.688-2.51-0.126-4.735-1.328-6.224-3.155-0.261 0.446-0.41 0.965-0.41 1.518 0 1.048 0.534 1.972 1.344 2.514-0.495-0.016-0.961-0.151-1.368-0.378 0 0.013 0 0.025 0 0.038 0 1.463 1.042 2.683 2.422 2.962-0.253 0.069-0.52 0.106-0.796 0.106-0.194 0-0.383-0.018-0.568-0.054 0.384 1.2 1.5 2.073 2.821 2.097-1.034 0.81-2.335 1.293-3.75 1.293-0.244 0-0.484-0.014-0.72-0.042 1.336 0.857 2.923 1.357 4.63 1.357 5.554 0 8.592-4.602 8.592-8.593 0-0.13-0.002-0.261-0.009-0.39 0.59-0.426 1.102-0.958 1.507-1.563z"
+                    />
+                  </symbol>
+                
+                  <symbol id="svg--facebook" viewbox="0 -7 16 30">
+                    <path d="M12 3.303h-2.285c-0.27 0-0.572 0.355-0.572 0.831v1.65h2.857v2.352h-2.857v7.064h-2.698v-7.063h-2.446v-2.353h2.446v-1.384c0-1.985 1.378-3.6 3.269-3.6h2.286v2.503z" />
+                  </symbol>
+                
+                  <symbol id="svg--github" viewbox="-30 -30 150 150">
+                    <path d="M61.896,52.548c-3.59,0-6.502,4.026-6.502,8.996c0,4.971,2.912,8.999,6.502,8.999
+                        c3.588,0,6.498-4.028,6.498-8.999C68.395,56.574,65.484,52.548,61.896,52.548z M84.527,29.132c0.74-1.826,0.777-12.201-3.17-22.132
+                        c0,0-9.057,0.993-22.76,10.396c-2.872-0.793-7.736-1.19-12.597-1.19s-9.723,0.396-12.598,1.189C19.699,7.993,10.645,7,10.645,7
+                        c-3.948,9.931-3.913,20.306-3.172,22.132C2.834,34.169,0,40.218,0,48.483c0,35.932,29.809,36.508,37.334,36.508
+                        c1.703,0,5.088,0.004,8.666,0.009c3.578-0.005,6.965-0.009,8.666-0.009C62.191,84.991,92,84.415,92,48.483
+                        C92,40.218,89.166,34.169,84.527,29.132z M46.141,80.574H45.86c-18.859,0-33.545-2.252-33.545-20.58
+                        c0-4.389,1.549-8.465,5.229-11.847c6.141-5.636,16.527-2.651,28.316-2.651c0.045,0,0.093-0.001,0.141-0.003
+                        c0.049,0.002,0.096,0.003,0.141,0.003c11.789,0,22.178-2.984,28.316,2.651c3.68,3.382,5.229,7.458,5.229,11.847
+                        C79.686,78.322,65,80.574,46.141,80.574z M30.104,52.548c-3.588,0-6.498,4.026-6.498,8.996c0,4.971,2.91,8.999,6.498,8.999
+                        c3.592,0,6.502-4.028,6.502-8.999C36.605,56.574,33.695,52.548,30.104,52.548z" />
+                  </symbol>
+                
+                  <symbol id="svg--pinterest" viewbox="-180 -180 850 850">
+                    <path d="M430.149,135.248C416.865,39.125,321.076-9.818,218.873,1.642
+                                C138.071,10.701,57.512,76.03,54.168,169.447c-2.037,57.029,14.136,99.801,68.399,111.84
+                                c23.499-41.586-7.569-50.676-12.433-80.802C90.222,77.367,252.16-6.718,336.975,79.313c58.732,59.583,20.033,242.77-74.57,223.71
+                                c-90.621-18.179,44.383-164.005-27.937-192.611c-58.793-23.286-90.013,71.135-62.137,118.072
+                                c-16.355,80.711-51.557,156.709-37.3,257.909c46.207-33.561,61.802-97.734,74.57-164.704
+                                c23.225,14.136,35.659,28.758,65.268,31.038C384.064,361.207,445.136,243.713,430.149,135.248z" />
+                  </symbol>
+                
+                </svg>
+                
+                <div class="wrapper">
+                <div class="connect">
+                
+                  <a href="" class="share twitter">
+                    <svg role="presentation" class="svg--icon">
+                      <use xlink:href="#svg--twitter" />
+                    </svg>
+                    <span class="clip">TWITTER</span>
+                  </a>
+                
+                  <a href="" rel="author" class="share facebook">
+                    <svg role="presentation" class="svg--icon">
+                      <use xlink:href="#svg--facebook" />
+                      <span class="clip">FACEBOOK</span>
+                    </svg>
+                  </a>
+                
+                  <a href="" class="share github">
+                    <svg role="presentation" class="svg--icon">
+                      <use xlink:href="#svg--github" />
+                      <span class="clip">GITHUB</span>
+                    </svg>
+                  </a>
+                
+                  <a href="" class="share  pinterest">
+                    <svg role="presentation" class="svg--icon">
+                      <use xlink:href="#svg--pinterest" />
+                      <span class="clip">PINTEREST</span>
+                    </svg>
+                  </a>
+                
+                </div>
+                </div>
+  
+              </div>
+  
+  
+          </div>
+          <div class="footele" id="fe3">
+              <h1>Contact Us</h1>
+              <a href="{{url_for('ourteam')}}" class="ourteambtn"><p style="font-size: 1.5rem;">Our Team</p></a>
+          </div>
+      </div>
+      
+      <div class="bf">
+        <h1>BEEFIT</h1>
+        <p> &#169;copyrights with our Team</p>
+      </div>
+  
+  </div>
+
+</body>
+<script>
+    var enterqauantiy;
+    var submitlist=[];
+    var serv="";
+    var resultdictionary={};
+  function autocomplete(inp, arr) {
+    /*the autocomplete function takes two arguments,
+    the text field element and an array of possible autocompleted values:*/
+    var currentFocus;
+    /*execute a function when someone writes in the text field:*/
+    inp.addEventListener("input", function(e) {
+        var a, b, i, val = this.value;
+        /*close any already open lists of autocompleted values*/
+        closeAllLists();
+        if (!val) { return false;}
+        currentFocus = -1;
+        /*create a DIV element that will contain the items (values):*/
+        a = document.createElement("DIV");
+        console.log( this.id );
+        a.setAttribute("id", this.id + "autocomplete-list");
+        a.setAttribute("class", "autocomplete-items");
+        /*append the DIV element as a child of the autocomplete container:*/
+        this.parentNode.appendChild(a);
+        /*for each item in the array...*/
+        for (i = 0; i < arr.length; i++) {
+          /*check if the item starts with the same letters as the text field value:*/
+          if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+            /*create a DIV element for each matching element:*/
+            b = document.createElement("DIV");
+            /*make the matching letters bold:*/
+            b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+            b.innerHTML += arr[i].substr(val.length);
+            /*insert a input field that will hold the current array item's value:*/
+            b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+            /*execute a function when someone clicks on the item value (DIV element):*/
+            b.addEventListener("click", function(e) {
+                /*insert the value for the autocomplete text field:*/
+                inp.value = this.getElementsByTagName("input")[0].value;
+                 enterqauantiy=document.createElement("span")
+                enterqauantiy.innerHTML=dic[inp.value].slice(1);
+                if(document.getElementById("mycalorie").childElementCount==2)
+               document.getElementById("mycalorie").removeChild(document.getElementById("mycalorie").childNodes[3]);
+  document.getElementById("mycalorie").appendChild(enterqauantiy);
+                //enterquantity.innerHTML=dic[];
+  
+  
+                /*close the list of autocompleted values,
+                (or any other open lists of autocompleted values:*/
+                closeAllLists();
+            });
+            a.appendChild(b);
+          }
+        }
+    });
+    /*execute a function presses a key on the keyboard:*/
+    inp.addEventListener("keydown", function(e) {
+        var x = document.getElementById(this.id + "autocomplete-list");
+        if (x) x = x.getElementsByTagName("div");
+        if (e.keyCode == 40) {
+          /*If the arrow DOWN key is pressed,
+          increase the currentFocus variable:*/
+          currentFocus++;
+          /*and and make the current item more visible:*/
+          addActive(x);
+        } else if (e.keyCode == 38) { //up
+          /*If the arrow UP key is pressed,
+          decrease the currentFocus variable:*/
+          currentFocus--;
+          /*and and make the current item more visible:*/
+          addActive(x);
+        } else if (e.keyCode == 13) {
+          /*If the ENTER key is pressed, prevent the form from being submitted,*/
+          e.preventDefault();
+          if (currentFocus > -1) {
+            /*and simulate a click on the "active" item:*/
+            if (x) x[currentFocus].click();
+          }
+        }
+    });
+    function addActive(x) {
+      /*a function to classify an item as "active":*/
+      if (!x) return false;
+      /*start by removing the "active" class on all items:*/
+      removeActive(x);
+      if (currentFocus >= x.length) currentFocus = 0;
+      if (currentFocus < 0) currentFocus = (x.length - 1);
+      /*add class "autocomplete-active":*/
+      x[currentFocus].classList.add("autocomplete-active");
+    }
+    function removeActive(x) {
+      /*a function to remove the "active" class from all autocomplete items:*/
+      for (var i = 0; i < x.length; i++) {
+        x[i].classList.remove("autocomplete-active");
+      }
+    }
+    function closeAllLists(elmnt) {
+      /*close all autocomplete lists in the document,
+      except the one passed as an argument:*/
+      var x = document.getElementsByClassName("autocomplete-items");
+      for (var i = 0; i < x.length; i++) {
+        if (elmnt != x[i] && elmnt != inp) {
+          x[i].parentNode.removeChild(x[i]);
+        }
+      }
+    }
+    /*execute a function when someone clicks in the document:*/
+    document.addEventListener("click", function (e) {
+        closeAllLists(e.target);
+    });
+  }
+  
+  /*An array containing all the country names in the world:*/
+  // var countries = ["hello","hello1","hello2","hello4"];
+  var countries = {{food_list | tojson}};
+  var dic = {{data | tojson}};
+  // var dic = {"hello":"manas","hello1":"grass","hell2":"light","hell4":"one punch"};
+  
+  /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+  autocomplete(document.getElementById("myInput"), countries);
+  
+  function addelements(){
+      var x=document.getElementById("myInput").value;
+      let checkcal=document.getElementById("mycalorie").childNodes[1].value;
+  serv=document.getElementById("mycalorie").childNodes[3].innerHTML
+      // var para=document.createElement("p");
+  // para.innerText=x;
+      // let y="                                         ";
+      // let z=x.concat(y.slice(0,y.length- x.length),"o");
+      // console.log(z);
+      // console.log(y.length - x.length);
+      // console.log(document.getElementById("f").childElementCount);
+      var listItem = document.createElement("ul");
+      listItem.style.position="relative";
+      listItem.style.color="black";
+      var listspecs=document.createElement("span");
+      var listcheckb=document.createElement("button");
+      var listdelete=document.createElement("button");
+      var listcal=document.createElement("span");
+      var listserv=document.createElement("span");
+      serv.trim();
+      
+  
+  
+      // buttons
+      listcheckb.innerText="check";
+      listdelete.innerText="delete";
+      listspecs.innerText=x
+      listcal.innerHTML=" "+checkcal;
+      listserv.innerHTML=serv;
+      listdelete.className="deletefood"
+  
+      // listdelete.style.position="absolute";"right";
+      // listcheckb.style.position="absolute";"left";
+      // listcheckb.style.position="absolute";"right";
+      //  listcheckb.style.cssFloat="left";// not working for some reason
+  let checknum=0;
+  if(isNaN(checkcal)||parseInt(checkcal)<=0)
+  checknum=1;
+  
+      listcheckb.addEventListener('click',(e)=>{
+          // console.log(e.target.firstChild)
+          // console.log(e.target.parentNode.firstChild)
+          let r=e.target.parentNode;
+  console.log(r);
+  // console.log(r.allChildElements);
+          let f1=document.getElementById('f');
+          if(r.parentNode==f1)
+          {
+          f1.removeChild(r);
+           var s =document.createElement('s');
+           s.appendChild(r);
+          //  console.log(s.firstChild);
+          //  f1.appendChild(s);
+           f1.appendChild(s);
+      }
+          else{
+          // {console.log(r.allChildElements);
+              f1.removeChild(r.parentNode);
+              f1.insertBefore(r,f1.children[0]);
+           }
+          
+  
+  
+      });
+      listdelete.addEventListener('click',(e)=>{
+          let f=document.getElementById('f');
+          let r=e.target.parentNode;
+           f.removeChild(r);
+       if(f.childElementCount==1)
+     f.removeChild(f.firstChild);
+      
+    });
+  
+  
+  // append
+  let f=1
+  
+  
+  for(let i=0;i<countries.length;i++){
+    if(countries[i]==x)
+    f=0;
+  }
+  if(x.trim()!=""&&f==0&&checkcal.trim()!=""&&checknum==0){
+  listItem.appendChild(listdelete);
+  listItem.appendChild(listspecs);
+  listItem.appendChild(listcal);
+  listItem.appendChild(listserv);
+  if(document.getElementById("f").childElementCount==0){
+  var sub=document.createElement("input")
+  sub.type="submit";
+  sub.innerText="submit";
+  sub.className="deletefood";
+  sub.addEventListener('click',(e)=>{
+    let mine;
+  for(let i=document.getElementById("f").childElementCount-2;i>=0;i=i-1){
+   mine=document.getElementById("f").childNodes[i].childNodes[1].innerHTML
+   if(resultdictionary[mine]=== undefined)
+  resultdictionary[mine]=parseInt(document.getElementById("f").childNodes[i].childNodes[2].innerHTML.slice(1));
+  else
+  resultdictionary[mine]=parseInt(document.getElementById("f").childNodes[i].childNodes[2].innerHTML.slice(1))+resultdictionary[mine];
+  // s = JSON.stringify(resultdictionary);
+  }
+   $.ajax({
+              url:"/takeinput",
+              type:"POST",
+              contentType: "application/json",
+              data: JSON.stringify(resultdictionary)});
+  
+  })
+ 
+  document.getElementById("f").appendChild(sub);
+  }
+  listItem.className="listfood"
+  document.getElementById("f").insertBefore(listItem,document.getElementById("f").children[0]);
+  }
+  else
+  alert("please enter");
+  // first child
+  
+  // let p=document.getElementById('f').firstChild;
+  // console.log(p);
+  
+  
+      // newBtn.setAttribute("onclick",(e)=>console.log(e)); //does not work 
+      // newBtn.onclick = ()=>console.log('gello') //works
+  }
+  //newBtn.addEventListener("click") 
+  
+  // <h2>koko</h2>
+</script>
+
+<script >
+    //  change the value of dic1
+      var dic2= {{exercise_dict | tojson}};
+      var countries1 = {{exercise_list | tojson}};
+      console.log(dic2)
+      console.log(countries1)
+      
+     
+    autocomplete1(document.getElementById("myInput1"), countries1);
+    var enterqauantiy1;
+      var submitlist1=[];
+      var serv1="";
+      var resultdictionary1=0;
+    function autocomplete1(inp, arr) {
+    
+      console.log(arr);
+      /*the autocomplete function takes two arguments,
+      the text field element and an array of possible autocompleted values:*/
+      var currentFocus;
+      /*execute a function when someone writes in the text field:*/
+      inp.addEventListener("input", function(e) {
+          var a, b, i, val = this.value;
+          /*close any already open lists of autocompleted values*/
+          closeAllLists1();
+          if (!val) { return false;}
+          currentFocus = -1;
+          /*create a DIV element that will contain the items (values):*/
+          a = document.createElement("DIV");
+          a.setAttribute("id", this.id + "autocomplete-list1");
+          a.setAttribute("class", "autocomplete-items1");
+          /*append the DIV element as a child of the autocomplete container:*/
+          this.parentNode.appendChild(a);
+          /*for each item in the array...*/
+          for (i = 0; i < arr.length; i++) {
+            /*check if the item starts with the same letters as the text field value:*/
+            if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+              /*create a DIV element for each matching element:*/
+              b = document.createElement("DIV");
+              /*make the matching letters bold:*/
+              b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+              b.innerHTML += arr[i].substr(val.length);
+              /*insert a input field that will hold the current array item's value:*/
+              b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+              /*execute a function when someone clicks on the item value (DIV element):*/
+              b.addEventListener("click", function(e) {
+                  /*insert the value for the autocomplete text field:*/
+                  inp.value = this.getElementsByTagName("input")[0].value;
+                  enterqauantiy1=document.createElement("span");
+                  enterqauantiy1.innerHTML="minutes";
+                  if(document.getElementById("mycalorie1").childElementCount==2)
+                 document.getElementById("mycalorie1").removeChild(document.getElementById("mycalorie1").childNodes[3]);
+    document.getElementById("mycalorie1").appendChild(enterqauantiy1);
+                  //enterquantity.innerHTML=dic[];
+    
+    
+                  /*close the list of autocompleted values,
+                  (or any other open lists of autocompleted values:*/
+                  closeAllLists1();
+              });
+              a.appendChild(b);
+            }
+          }
+      });
+      /*execute a function presses a key on the keyboard:*/
+      inp.addEventListener("keydown", function(e) {
+          var x = document.getElementById(this.id + "autocomplete-list1");
+          if (x) x = x.getElementsByTagName("div");
+          if (e.keyCode == 40) {
+            /*If the arrow DOWN key is pressed,
+            increase the currentFocus variable:*/
+            currentFocus++;
+            /*and and make the current item more visible:*/
+            addActive(x);
+          } else if (e.keyCode == 38) { //up
+            /*If the arrow UP key is pressed,
+            decrease the currentFocus variable:*/
+            currentFocus--;
+            /*and and make the current item more visible:*/
+            addActive1(x);
+          } else if (e.keyCode == 13) {
+            /*If the ENTER key is pressed, prevent the form from being submitted,*/
+            e.preventDefault();
+            if (currentFocus > -1) {
+              /*and simulate a click on the "active" item:*/
+              if (x) x[currentFocus].click();
+            }
+          }
+      });
+      function addActive1(x) {
+        /*a function to classify an item as "active":*/
+        if (!x) return false;
+        /*start by removing the "active" class on all items:*/
+        removeActive1(x);
+        if (currentFocus >= x.length) currentFocus = 0;
+        if (currentFocus < 0) currentFocus = (x.length - 1);
+        /*add class "autocomplete-active":*/
+        x[currentFocus].classList.add("autocomplete-active1");
+      }
+      function removeActive1(x) {
+        /*a function to remove the "active" class from all autocomplete items:*/
+        for (var i = 0; i < x.length; i++) {
+          x[i].classList.remove("autocomplete-active1");
+        }
+      }
+      function closeAllLists1(elmnt) {
+        /*close all autocomplete lists in the document,
+        except the one passed as an argument:*/
+        var x = document.getElementsByClassName("autocomplete-items1");
+        for (var i = 0; i < x.length; i++) {
+          if (elmnt != x[i] && elmnt != inp) {
+            x[i].parentNode.removeChild(x[i]);
+          }
+        }
+      }
+      /*execute a function when someone clicks in the document:*/
+      document.addEventListener("click", function (e) {
+          closeAllLists1(e.target);
+      });
+    }
+    
+    /*An array containing all the country names in the world:*/
+    /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+    
+    
+    function addelements1(){
+        var x=document.getElementById("myInput1").value;
+        let checkcal1=document.getElementById("mycalorie1").childNodes[1].value;
+    serv1="minutes";
+        // var para=document.createElement("p");
+    // para.innerText=x;
+        // let y="                                         ";
+        // let z=x.concat(y.slice(0,y.length- x.length),"o");
+        // console.log(z);
+        // console.log(y.length - x.length);
+        // console.log(document.getElementById("f").childElementCount);
+        var listItem = document.createElement("ul");
+        listItem.style.position="relative";
+        listItem.style.color="black";
+        var listspecs=document.createElement("span");
+        var listcheckb=document.createElement("button");
+        var listdelete=document.createElement("button");
+        var listcal=document.createElement("span");
+        var listserv=document.createElement("span");
+        serv1.trim();
+        
+    
+    
+        // buttons
+        listcheckb.innerText="check";
+        listdelete.innerText="delete";
+        listspecs.innerText=x
+        listcal.innerHTML=" "+checkcal1;
+        listserv.innerHTML=" "+serv1;
+        listdelete.className="deletefood"
+        
+        // listdelete.style.position="absolute";"right";
+        // listcheckb.style.position="absolute";"left";
+        // listcheckb.style.position="absolute";"right";
+        //  listcheckb.style.cssFloat="left";// not working for some reason
+    let checknum1=0;
+    if(isNaN(checkcal1)||parseInt(checkcal1)<=0)
+    checknum1=1;
+    
+      
+        listdelete.addEventListener('click',(e)=>{
+            let f=document.getElementById('e');
+            let r=e.target.parentNode;
+             f.removeChild(r);
+         if(f.childElementCount==1)
+       f.removeChild(f.firstChild);
+        
+      });
+    
+    
+    // append
+    let f=1
+   ;
+    
+    for(let i=0;i<countries1.length;i++){
+      if(countries1[i]==x)
+      f=0;
+    }
+    if(x.trim()!=""&&f==0&&checkcal1.trim()!=""&&checknum1==0){
+    listItem.appendChild(listdelete);
+    listItem.appendChild(listspecs);
+    listItem.appendChild(listcal);
+    listItem.appendChild(listserv);
+    if(document.getElementById("e").childElementCount==0){
+    var sub=document.createElement("input")
+    sub.type="submit";
+    sub.innerText="submit";
+    sub.className="deletefood"
+    sub.addEventListener('click',(e)=>{
+      let mine;
+    for(let i=document.getElementById("e").childElementCount-2;i>=0;i=i-1){
+     mine=document.getElementById("e").childNodes[i].childNodes[1].innerHTML;
+     if(resultdictionary1!=undefined)
+    resultdictionary1=dic2[mine]*parseInt(document.getElementById("e").childNodes[i].childNodes[2].innerHTML.slice(1))+resultdictionary1;
+    else
+    resultdictionary1=dic2[mine]*parseInt(document.getElementById("e").childNodes[i].childNodes[2].innerHTML.slice(1));
+    // s = JSON.stringify(resultdictionary);
+    // let v = JSON.stringify(resultdictionary1);
+    // math.ceil(resultdictionary1); 
+    // alert(resultdictionary1+"fdv");
+    var ashmit = {"data" : resultdictionary1};
+    console.log(ashmit);
+    console.log(typeof ashmit)
+    console.log(typeof resultdictionary1)
+    
+    // alert(ashmit);
+    
+    // ashmit = JSON.stringify(ashmit)
+    }
+     $.ajax({
+                url:"/testinput",
+                type:"POST",
+                contentType: "application/json",
+                data: JSON.stringify(ashmit)});
+    
+    })
+    document.getElementById("e").appendChild(sub);
+    }
+    listItem.className="listexercise";
+    document.getElementById("e").insertBefore(listItem,document.getElementById("e").children[0]);
+    }
+    else
+    alert("please enter");
+    // first child
+    
+    // let p=document.getElementById('f').firstChild;
+    // console.log(p);
+    
+    
+        // newBtn.setAttribute("onclick",(e)=>console.log(e)); //does not work 
+        // newBtn.onclick = ()=>console.log('gello') //works
+    }
+    //newBtn.addEventListener("click") 
+    
+    // <h2>koko</h2>
+    
+      </script>
+
+<script>
+    window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader--hidden");
+
+    loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
+    });
+    });
+
+</script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var x={{data | tojson}};
+        var y=[['date', 'calorie in', 'calorie out']]
+        for(let i=0;i<x.length;i++)
+        y.push(x[i]);
+        console.log(y);
+       
+        // var data = google.visualization.arrayToDataTable([
+        //   ['date', 'calorie in', 'calorie out'],
+        //   ['1', 1000, 400],
+        //   ['2', 1170, 460],
+        //   ['3', 660, 1120],
+        //   ['4', 1030, 540]
+        // ]);
+        var data = google.visualization.arrayToDataTable(y);
+                var options = {
+          chart: {
+            title: 'Company Performance',
+            subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+          },
+          bars: 'vertical' // Required for Material Bar Charts.
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+       
+      }
+    </script>
+
+</html>

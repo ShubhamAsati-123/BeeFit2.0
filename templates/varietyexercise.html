@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variety of Exercise</title>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='varietyexercise.css')}}" type="text/css"> 
+    
+</head>
+<body>
+    <div class="loader"><img src="static/images/wired-outline-1186-honeycombs.gif" alt=""></div>
+
+    <div class="logo">
+        <img src="{{url_for('static',filename='images/logo.png')}}" alt="Beefit Logo" class="logo">
+    </div>
+
+    <div class="header">
+        <div class="headleft">
+            <a href="{{url_for('mainpage')}}"><h3 class="headbtn">Home</h3></a>
+            <a href=""><h3 class="headbtn">How It Works</h3></a>
+            <div class="dropdown">
+              <h3 class="headbtn">Profile</h3>
+              <div class="dropdown-content">
+              <a href="{{url_for('profilepage')}}">My Profile</a>
+              <a href="{{url_for('logout')}}">Logout</a>
+              </div>
+            </div>
+        </div>
+    </div>
+    <h1 style="margin-top: 1em;">Varities of Exercise</h1>
+    <p>This category directs you to different varities of exercise ,their procedure and benefits.Some common tips that one should follow before doing any of these exercises are warming up before you start your workout which eventually helps to prepare your body for exercise and reduces the risk of injury and cooling down after you finish your workout which helps your body to recover and prevents muscle soreness.Listen to your body and take breaks when you need them. Don't push yourself too hard, especially if you are new to exercise.Drink plenty of water before, during, and after your workout. Staying hydrated is important for preventing dehydration and muscle cramps.Wear comfortable clothing and shoes. Wearing the right clothing and shoes can help you to stay comfortable and prevent injuries.Enjoy every activity you do and extract the most out of it.</p>
+</div>
+
+<h1>Choose the best suitable exercise mode for yourself</h1>
+
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+
+                <div class="text-card" id="card1">
+                    <h3>Aerobic exercise</h3>
+                    <p>Aerobic exercise is any type of physical activity that gets your heart rate up and your blood flowing. It's a great way to improve your cardiovascular health, reduce your risk of chronic diseases, and lose weight or maintain a healthy weight.</p>
+                    <a href="{{url_for('t1')}}">
+                        <div class="btn">
+                            <button>Explore</button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="text-card" id="card2">
+                    <h3>Resistance exercise</h3>
+                    <p>Resistance exercise, also known as strength training or weight training, is a type of physical activity that uses resistance to build strength, muscle mass, and endurance. Resistance can be provided by free weights, weight machines, or your own body weight.</p>
+                    <a href="{{url_for('t6')}}">
+                        <div class="btn">
+                            <button>Explore</button>
+                        </div>
+                    </a>
+                </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+
+                <div class="text-card" id="card3">
+                    <h3>Circuit training
+                    </h3>
+                    <p>Circuit training is a type of workout that involves completing a series of exercises in a circuit, with little or no rest between exercises. The goal of circuit training is to work multiple muscle groups in a short period of time.
+                        Circuit training is a great way to improve your cardiovascular fitness, strength, and endurance.</p>
+                        <a href="{{url_for('t2')}}">
+                            <div class="btn">
+                                <button>Explore</button>
+                            </div>
+                        </a>
+                </div>
+
+                <div class="text-card" id="card4">
+                    <h3>Flexibility exercise</h3>
+                    <p>Flexibility exercise is a type of physical activity that helps to increase the range of motion in your joints. It can be done through a variety of activities, including stretching, yoga, and Pilates.</p>
+                    <a href="{{url_for('t3')}}">
+                        <div class="btn">
+                            <button>Explore</button>
+                        </div>
+                    </a>
+                </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+                <div class="text-card" id="card5">
+                    <h3>High-intensity interval training (HIIT) </h3>
+                    <p>High-intensity interval training (HIIT) is a type of exercise that involves short bursts of intense activity followed by brief periods of rest or low-intensity activity. HIIT workouts are typically shorter than traditional cardio workouts, but they can be just as effective, if not more so, at improving fitness.</p>
+                    <a href="{{url_for('t4')}}">
+                        <div class="btn">
+                            <button>Explore</button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="text-card" id="card6">
+                    <h3>Low-intensity steady-state (LISS) training</h3>
+                    <p>Low-intensity steady-state (LISS) training is a type of cardiovascular exercise that involves working out at a moderate intensity for an extended period of time. LISS is a great way to improve your cardiovascular fitness, burn calories, and lose weight.</p> 
+                    <a href="{{url_for('t5')}}">
+                        <div class="btn">
+                            <button>Explore</button>
+                        </div>
+                    </a>
+                </div>
+
+        </div>
+    </div>
+</section>
+
+
+</body>
+<script type="text/javascript">
+  function load_iframes() {
+var vidDefer = document.getElementsByTagName('iframe');
+for (var i=0; i<vidDefer.length; i++) {
+if(vidDefer[i].getAttribute('data-src')) {
+vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+} } }
+
+
+  function isnumberinput(evt){
+      var ch = String.fromCharCode(evt.which);
+
+      if (!(/[0-9]/.test(ch))){
+          evt.preventDefault();
+      }
+  }
+
+
+  window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+      load_iframes();
+
+  });
+  });
+
+</script>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibility</title>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='flexibility.css')}}" type="text/css"> 
+</head>
+<body>
+    <div class="loader"><img src="{{url_for('static',filename='images/wired-outline-1186-honeycombs.gif')}}" alt=""></div>
+
+    <div class="logo">
+        <img src="{{url_for('static',filename='images/logo.png')}}" alt="Beefit Logo" class="logo">
+    </div>
+
+    <div class="header">
+        <div class="headleft">
+            <a href="{{url_for('mainpage')}}"><h3 class="headbtn">Home</h3></a>
+            <a href=""><h3 class="headbtn">How It Works</h3></a>
+            <div class="dropdown">
+              <h3 class="headbtn">Profile</h3>
+              <div class="dropdown-content">
+              <a href="{{url_for('profilepage')}}">My Profile</a>
+              <a href="{{url_for('logout')}}">Logout</a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>FLEXIBILITY EXERCISE</h1>
+    <P>
+        Few tips for the following exercise are warming up before you stretch which helps to prepare your muscles for stretching and reduces the risk of injury.
+        Some of the benefits of flexibility exercises are improved posture and mental health,reduced risk of injury and stress levels,increased range of motions and easier everyday activities.
+
+    </P>
+    
+      
+<div>
+<h2>Video Resources</h2>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/i7LJ-39bFgE" style="background-color: grey;"></iframe>
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/Ef6LwAaB3_E" style="background-color: grey;"></iframe>
+                     
+          
+        </div>
+    </div>
+</section>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/Gu-zC_1fhyg" style="background-color: grey;"></iframe>
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/Ru1hYrwCZJo" style="background-color: grey;"></iframe>
+            
+        </div>
+    </div>
+</section>
+<section>
+    <div class ="container reveal">
+        
+        <div class="cards">
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/Eml2xnoLpYE" style="background-color: grey;"></iframe>
+          <iframe src="" frameborder="2" class="vid" data-src="https://www.youtube.com/embed/W5LvKNElKH4" style="background-color: grey;"></iframe>
+           
+        </div>
+    </div>
+</section>
+
+
+
+
+</body>
+<script type="text/javascript">
+    function load_iframes() {
+var vidDefer = document.getElementsByTagName('iframe');
+for (var i=0; i<vidDefer.length; i++) {
+if(vidDefer[i].getAttribute('data-src')) {
+vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+} } }
+ 
+ 
+    function isnumberinput(evt){
+        var ch = String.fromCharCode(evt.which);
+
+        if (!(/[0-9]/.test(ch))){
+            evt.preventDefault();
+        }
+    }
+
+
+    window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader--hidden");
+
+    loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
+        load_iframes();
+
+    });
+    });
+
+</script>
+</html>
