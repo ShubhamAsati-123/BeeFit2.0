@@ -529,11 +529,9 @@ def SignUp_page():
 
                 if pass_in_data == password_encoded:
                     session['Id'] = num
-                    if rememberme == '1': # check for making the session permanent
-                        session.permanent = True   
-                    else:
-                        session.permanent = False            
-                   
+                    
+                    session.permanent = True   
+                         
                     del df,salt_list,log_list,password_list,user_list
                     return redirect('mainpage') # return main page here
                 else:
@@ -577,10 +575,8 @@ def SignIn_page():
 
             if pass_in_data == password_encoded:
                 session['Id'] = num
-                if rememberme == '1': # check for making the session permanent
-                    session.permanent = True   
-                else:
-                    session.permanent = False            
+                
+                session.permanent = True            
        
                 del df,salt_list,log_list,password_list,user_list
                 return redirect('mainpage') # return main page here
