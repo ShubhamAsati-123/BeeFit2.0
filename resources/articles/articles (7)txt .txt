@@ -1,0 +1,92 @@
+Super-sized nanocage could deliver bigger drug cargoes
+Building a bigger box
+Nanocages are tiny artificial containers that can be used to deliver therapeutics
+to a target destination in the body. But some drug molecules are like gifts that
+are too big for a standard-sized nanocage 'box'. Now, in an article published
+today in Nature Synthesis, researchers from the University of Cambridge
+describe how they have built a super-sized nanocage that could be used to
+deliver larger drug cargoes. They have built a bigger box.
+Simple building blocks
+Rational control over the self-assembly of these types of cages generally poses
+considerable challenges. So instead of following traditional self-assembly
+methods, the team decided to use a simple building block process inspired by
+natural biological systems. Using the new method, they were able to build
+progressively larger artificial nanocages, with the largest cage having an
+enclosed volume greater than 92 cubic nanometres -- the largest ligandenclosed inner cavity volume ever made.
+Larger cages have been reported, but they have more open ligand frameworks,
+which are not as useful because these cages have not been able to bind
+cargoes. Prospective 'guest' molecules slip out between the widely-spaced
+bars, unless they are covalently tethered to the 'host' framework.
+First author Dr Kai Wu, a postdoctoral researcher in the Nitschke lab in the
+Yusuf Hamied Department of Chemistry, said: "The findings of this study are
+important because they demonstrate how we are able to create ever-larger
+complex, functional structures using simple building blocks."
+Larger cargoes
+The super-sized nanocages have potential applications in fields such as drug
+delivery and biotechnology, where they could be used to deliver larger
+therapeutic biomolecules to specific parts of the body.
+
+The researchers also note that the large internal cavities of the nanocages
+could serve as a platform for the binding of large biomolecules, such as
+hydrophobic membrane proteins or proteases, which could be useful in drug
+discovery and development.
+Wu said: "Overall, this research expands our understanding of how to create
+nanoscale structures and may have practical implications in a variety of fields."
+Professor Jonathan Nitschke, who led the research, said: "This work,
+sponsored in part by Astex Pharmaceuticals under its Sustaining Innovation
+Postdoctoral Programme, aims to have real-world impact in the field of new
+drug development."
+
+New pesticide exposure test developed to protect inexperienced cannabis
+farmers
+Dr. Emanuela Gionfriddo, an assistant professor of analytical chemistry, and
+Nipunika H. Godage, a Ph.D. candidate in UToledo's Dr. Nina McClelland
+Laboratory for Water Chemistry and Environmental Analysis, published
+research in the journal Analytical and Bioanalytical Chemistry outlining their
+groundbreaking method that is able to detect 79 pesticide residues in human
+blood plasma at "ultra-trace" levels, or parts per trillion.
+"This has the potential to be applied to human exposure studies for the general
+public such as exposure through food or contaminated water but, most
+importantly, agricultural workers who have a higher potential for acute exposure
+to these toxic chemicals, which typically occurs through the skin, with
+pesticides then passing into the bloodstream and circulating through the body,"
+Gionfriddo said.
+Pesticides are widely used in farming to prevent or reduce produce losses
+caused by pests and improve the quality of fruits and vegetables, but human
+exposure during mixing or application has been reported to cause neurological
+disorders, poisoning, cancer, reproductive disruptions, respiratory problems
+and chronic kidney diseases among farm workers.
+Though pesticides are regulated by the U.S. Environmental Protection Agency,
+Gionfriddo said the legalization of cannabis recently in several states has led to
+"inexperienced" farmers exposing themselves to the harmful chemicals since
+those workers are less familiar with pesticide safety equipment and procedures
+as well as proper pesticide storage and handling.
+The pesticides selected for her study are the most commonly used pesticides
+during cannabis cultivation.
+Gionfriddo's new testing method uses what's called bio solid-phase
+microextraction with liquid chromatography-tandem mass spectrometry.
+"To meet the growing demands of regulatory agencies and routine analysis
+laboratories, sample throughput and method tunability is critical," Gionfriddo
+said. "Using automated samplers, the preparation time per sample is 1.7minutes."
+And as occupational exposure to pesticides can occur at varying concentration
+levels, it is important for any method to quantify pesticides at low
+concentrations. The new testing method demonstrated higher sensitivity,
+precision and accuracy and a drastic reduction in abnormalities compared to
+the commonly used approach, known as QuEChERS, which stands for Quick,
+Easy, Cheap, Effective, Rugged and Safe but can be labor intensive with
+prolonged workflows.
+Last week during National Farmworker Awareness Week, the U.S. EPA said
+pesticide exposure doesn't only happen when working in the fields. The federal
+agency said pesticide take-home exposure can occur when farm workers go
+home bearing pesticide residues that may cling to their skin, clothing, hats,
+boots, tools, lunch coolers or other items in their work environment. Their
+children may then be exposed to these pesticide residues.
+"Assessing pesticide exposure quickly and thoroughly is crucial for the health
+and safety of workers and their families, to correct malpractices in pesticide
+storage and application, and to prevent further exposure," Godage said. "Our
+new method can extract and analyze simultaneously a wide variety of
+pesticides from human plasma."
+To learn more about the U.S. EPA's Occupational Pesticide Safety and Health
+program, visit the agency's website (https://www.epa.gov/pesticide-workersafety).
+
+

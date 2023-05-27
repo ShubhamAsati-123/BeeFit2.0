@@ -1,0 +1,52 @@
+The world is filled with tiny creatures that find us delicious. 
+Bacteria and viruses are the obvious bad guys, drivers of deadly global pandemics and annoying
+infections. But the pathogens we haven't had to reckon with as much -- yet -are the fungi.Pathogenic fungi (Candida, Aspergillus, Cryptococcus and others)
+are notorious killers of immune-compromised people. But for the most part,
+healthy people have not had to worry about them, and the vast majority of the
+planet's potentially pathogenic fungi don't do well in the heat of our bodies.
+But all that may be about to change.
+A new study out of Duke University School of Medicine finds that raised
+temperatures cause a pathogenic fungus known as Cryptococcus
+deneoformans to turn its adaptative responses into overdrive. This increases its
+number of genetic changes, some of which might presumably lead to higher
+heat resistance, and others perhaps toward greater disease-causing potential.
+Specifically, higher heat makes more of the fungus' transposable elements, or
+jumping genes, get up and move around within the fungal DNA, leading to
+changes in the way its genes are used and regulated. The findings appeared
+Jan. 20 in the Proceedings of the National Academy of Sciences.
+"These mobile elements are likely to contribute to adaptation in the
+environment and during an infection," said postdoctoral researcher Asiya Gusa
+Ph.D. of Molecular Genetics and Microbiology in the Duke School of Medicine.
+"This could happen even faster because heat stress speeds up the number of
+mutations occurring."
+This may ring a bell with viewers of the new HBO series "The Last of Us," where
+a dystopian hellscape is precipitated by a heat-adapted fungus that takes over
+humans and turns them into zombies. "That's exactly the sort of thing I'm
+talking about -- minus the zombie part!" said Gusa who just watched the first
+episode and who will join the Duke faculty as an assistant professor later this
+year.
+"These are not infectious diseases in the communicable sense; we don't
+transmit fungi to each other," Gusa said. "But the spores are in the air. We
+breathe in spores of fungi all the time and our immune systems are equipped to
+fight them."
+Fungal spores are generally larger than viruses, so your existing stock of face
+masks against Covid would probably be sufficient to stop them. That, and your
+body heat, for now.
+"Fungal diseases are on the rise, largely because of an increase in the number
+of people who have weakened immune systems or underlying health
+conditions," Gusa said. But at the same time, pathogenic fungi may be adapting
+to warmer temperatures as well.
+Working in the lab of Professor Sue Jinks-Robertson, Gusa led research that
+focused on three transposable elements that were particularly active under
+heat stress in C. deneoformans. But there are easily another 25 or more
+transposable elements in that species that could mobilize, she said.
+The team used 'long-read' DNA sequencing to see changes that might
+otherwise have been missed, Gusa said. Computational analysis allowed them
+to map transposons and then see how they had moved. "We have improvedtools now to see these movements that were previously hiding in our blind
+spots."
+Heat stress sped the mutations up. Following 800 generations of growth in
+laboratory medium, the rate of transposon mutations was five-times higher in
+fungi raised at body temperature (37 Celsius) compared with fungi raised at
+30C.
+
+

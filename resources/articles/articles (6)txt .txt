@@ -1,0 +1,53 @@
+Broccoli consumption protects gut lining, reduces disease, in mice
+Broccoli is known to be beneficial to our health. For example, research has
+shown that increased consumption of the cruciferous vegetable decreases
+incidence of cancer and type 2 diabetes. In a recent study, researchers at Penn
+State found that broccoli contains certain molecules that bind to a receptor
+within mice and help to protect the lining of the small intestine, thereby
+inhibiting the development of disease. The findings lend support to the idea
+that broccoli truly is a 'superfood.'
+"We all know that broccoli is good for us, but why? What happens in the body
+when we eat broccoli?" said Gary Perdew, H. Thomas and Dorothy Willits
+Hallowell Chair in Agricultural Sciences, Penn State. "Our research is helping to
+uncover the mechanisms for how broccoli and other foods benefit health in
+mice and likely humans, as well. It provides strong evidence that cruciferous
+vegetables, such as broccoli, cabbage, and Brussels sprouts should be part of
+a normal healthy diet."
+According to Perdew, the wall of the small intestine allows beneficial water and
+nutrients to pass into the body but prevents food particles and bacteria that
+could cause harm. Certain cells that line the intestine -- including enterocytes,
+which absorb water and nutrients; goblet cells, which secrete a protective layer
+of mucus on the intestinal wall; and Paneth cells, which secrete lysosomes that
+contain digestive enzymes -- help to modulate this activity and keep a healthy
+balance.
+In their study, which published in the journal Laboratory Investigation, Perdew
+and his colleagues found that molecules in broccoli, called aryl hydrocarbon
+receptor ligands, bind to aryl hydrocarbon receptor (AHR), which is a type of
+protein called a transcription factor. This binding, they found, initiates a variety
+of activities that affect the functions of intestinal cells.
+To conduct their study, the researchers fed an experimental group of mice a
+diet containing 15% broccoli -- equivalent to about 3.5 cups per day for
+humans -- and fed a control group of mice a typical lab diet that did not contain
+broccoli. They then analyzed the animals' tissues to determine the extent to
+which AHR was activated, as well as the quantities of various cell types and
+mucus concentrations, among other factors, in the two groups.
+The team found that mice that were not fed broccoli lacked AHR activity, which
+resulted in altered intestinal barrier function, reduced transit time of food in the
+small intestine, decreased number of goblet cells and protective mucus,
+decreased Paneth cells and lysosome production, and decreased number of
+enterocyte cells.
+"The gut health of the mice that were not fed broccoli was compromised in a
+variety of ways that are known to be associated with disease," said Perdew.
+"Our research suggests that broccoli and likely other foods can be used asnatural sources of AHR ligands, and that diets rich in these ligands contribute
+to resilience of the small intestine."
+More broadly, added Andrew Patterson, John T. and Paige S. Smith Professor of
+Molecular Toxicology and of Biochemistry and Molecular Biology, "these data
+suggest that dietary cues, relayed through the activity of AHR, can reshape the
+cellular and metabolic repertoire of the gastrointestinal tract."
+Other authors on the paper include Xiaoliang Zhou, Debopriya Chakraborty, Iain
+A. Murray, Denise Coslo, Zoe Kehs, Anitha Vijay, Carolyn Ton, Dhimant Desai
+and Shantu G. Amin.
+The National Institutes of Health Grants, U.S. Department of Agriculture and
+Penn State Cancer Institute supported this research.
+
+
