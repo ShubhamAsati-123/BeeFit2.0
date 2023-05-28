@@ -14,14 +14,25 @@ __To run the Server__
 __To run Server__
 
     flask --app main run
+    
 __Features__
 
 ##front page photo upload
 
-    Exercise--> provides users with a wide range of fitness related instructional videos(including yoga) to allow user to create and personalise a exercise routine for themselves.
+Exercise--> provides users with a wide range of fitness related instructional videos(including yoga) to allow user to
 
-    Diet--> provides users a large library of different diet plans from which the user can choose what is best for them and accordingly download the given pdf file.
+create and personalise a exercise routine for themselves.
 
-    Tracking--> This features allows the user to enter additional details regarding their calorie intake , calorie burnt(calculated through the choosen form of exercise or sports activity) and visualise it using the analyse feature to track their progress in form of graphs and bar charts which will effectively allow an individual to track their progress and set an optimistic future goal.
+Diet--> provides users a large library of different diet plans from which the user can choose what is best for them and
+
+accordingly download the given pdf file.
+
+Tracking--> This features allows the user to enter additional details regarding their calorie intake , calorie burnt
+
+(calculated through the choosen form of exercise or sports activity) and visualise it using the analyse feature to track their
+
+progress in form of graphs and bar charts which will effectively allow an individual to track their progress and set an
+
+optimistic future goal.
     
 
