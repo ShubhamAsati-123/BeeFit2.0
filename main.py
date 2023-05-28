@@ -832,7 +832,7 @@ def retriveData():
     age = list(df['age'])[0]
     height = list(df['height'])[0]
     blood = list(df['blood group'])[0]
-    print(df1['Gender'])
+
     data['Gender'] = gender
     data['Weight'] = weight
     data['Height'] = height
