@@ -26,8 +26,6 @@ Diet--> provides users a large library of different diet plans from which the us
 accordingly download the given pdf file.
 
 Tracking--> This features allows the user to enter additional details regarding their calorie intake , calorie burnt
-(calculated through the choosen form of exercise or sports activity) and visualise it using the analyse feature to track their
-progress in form of graphs and bar charts which will effectively allow an individual to track their progress and set an
-optimistic future goal.
+(calculated through the choosen form of exercise or sports activity) and visualise it using the analyse feature to track their progress in form of graphs and bar charts which will effectively allow an individual to track their progress and set an optimistic future goal.
     
 
