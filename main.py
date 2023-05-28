@@ -346,7 +346,9 @@ def profilepage():
             Height = request.form['height']
             Weight = request.form['weight']
             updateData(BloodGroup,Age,Height,Weight,Gender)
+            
             data = retriveData()
+            
             return render_template('profile_page.html',name = data['Name'],gender = data['Gender'],bloodGroup = data['BloodGroup'],age = data['Age'],height = data['Height'],weight=data['Weight'],bmi = data['BMI'],idealWeight = data['IdealWeight'])
         
         else:
@@ -400,7 +402,13 @@ def accountdetail():
                 df = df[fields]
                 df.to_csv(file_id.User_info())
                 df1.to_csv(file_id.details())
-                del df,df1,df2
+                
+                gf = pd.read_csv(file_id.genderData())
+                data1 = [[Id,"NAN"]]
+                gf1 = pd.DataFrame(data1,columns=Gender_field)
+                gf  = gf.append(gf1)
+                gf = gf[Gender_field]
+                gf.to_csv(file_id.genderData())
                 return redirect('/mainpage')
         else:
             return redirect('/mainpage')
@@ -818,12 +826,13 @@ def retriveData():
     df = df[fields_details]
     df = df.loc[df['ID'] == session['Id']]
     df1 = pd.read_csv(file_id.genderData())
-    df1.loc[df1['Id']==session['Id']]
+    df1= df1.loc[df1['Id']==session['Id']]
     gender = list(df1['Gender'])[0]
     weight = list(df['weight'])[0]
     age = list(df['age'])[0]
     height = list(df['height'])[0]
     blood = list(df['blood group'])[0]
+    print(df1['Gender'])
     data['Gender'] = gender
     data['Weight'] = weight
     data['Height'] = height
