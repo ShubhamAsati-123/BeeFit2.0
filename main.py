@@ -23,6 +23,7 @@ fields_details = ["ID","age","weight","height","blood group"]
 calorie_field = ["Id","Date","Calories"]
 calories_burnt = ['ID','Burnt calories','Date']
 feedback_field = ['ID','feedback']
+Gender_field = ['Id','Gender']
 
 # quote class with various fucntions to randomly generate quotes and return the writer and quote
 class quotes:
@@ -120,6 +121,18 @@ class calorie_functions:
 
 # class to return the absolute pathing of all our datasets and is system independent
 class file_id:
+
+
+    def genderData():
+        cwd = os.getcwd()
+        if platform == 'win32':
+            working_dir = cwd + r"\resources"
+            working_file = working_dir + r"\Gender.csv"
+        elif platform == 'darwin' or platform =='linux':
+            working_dir = cwd + "/resources"
+            working_file = working_dir + "/Gender.csv"
+        
+        return working_file
 
     def feedback_form():
         cwd = os.getcwd()
@@ -326,21 +339,22 @@ def mainpage():
 def profilepage():
     if 'Id' in session:            
         if request.method == 'POST':
-            print(request.form)
+            
+            Gender = request.form['Gender']
             BloodGroup = request.form['Blood']
             Age = request.form['age']
             Height = request.form['height']
             Weight = request.form['weight']
-            updateData(BloodGroup,Age,Height,Weight)
+            updateData(BloodGroup,Age,Height,Weight,Gender)
             data = retriveData()
-            return render_template('profile_page.html',name = data['Name'],bloodGroup = data['BloodGroup'],age = data['Age'],height = data['Height'],weight=data['Weight'],bmi = data['BMI'],idealWeight = data['IdealWeight'])
+            return render_template('profile_page.html',name = data['Name'],gender = data['Gender'],bloodGroup = data['BloodGroup'],age = data['Age'],height = data['Height'],weight=data['Weight'],bmi = data['BMI'],idealWeight = data['IdealWeight'])
         
         else:
             data = retriveData()
-            return render_template('profile_page.html',name = data['Name'],bloodGroup = data['BloodGroup'],age = data['Age'],height = data['Height'],weight=data['Weight'],bmi = data['BMI'],idealWeight = data['IdealWeight'])
+            return render_template('profile_page.html',name = data['Name'],gender=data['Gender'],bloodGroup = data['BloodGroup'],age = data['Age'],height = data['Height'],weight=data['Weight'],bmi = data['BMI'],idealWeight = data['IdealWeight'])
 
 
-        return render_template('profile_page.html',name = data['Name'],bloodGroup = data['BloodGroup'],age = data['Age'],height = data['Height'],weight=data['Weight'],bmi = data['BMI'],idealWeight = data['IdealWeight'])
+        return render_template('profile_page.html',name = data['Name'],gender=data['Gender'],bloodGroup = data['BloodGroup'],age = data['Age'],height = data['Height'],weight=data['Weight'],bmi = data['BMI'],idealWeight = data['IdealWeight'])
     else:
         return redirect('landingpage')
 # route for exercise page
@@ -728,7 +742,6 @@ def account_creation(username , password,Email_id,Phone):
     df1 = df1[fields]
     df1.to_csv(file_id.User_info())
     session['Id'] = int(num)
-    print("shubbha")
     return redirect('accountdetail') #here we will redirect to our main page
 
 #  function to record our user feedback
@@ -763,17 +776,27 @@ def bodySplitter(body):
     return less,more
 
 
-def updateData(BloodGroup,Age,Height,Weight):
+def updateData(BloodGroup,Age,Height,Weight,Gender):
     df1 = pd.read_csv(file_id.details())
     df  = pd.read_csv(file_id.User_info())
+    df5 = pd.read_csv(file_id.genderData())
+
     # First_login_list = df['First_login']
-    Id = session['Id']
+    Id = int(session['Id'])
     df1 = df1[fields_details]
     data = [[Id,Age,Weight,Height,BloodGroup]]
     df2 = pd.DataFrame(data,columns=fields_details)
     df1 = df1.append(df2)
     df1 = df1.drop_duplicates(subset= ["ID"],keep='last')
+
+    data1 = [[Id,Gender]]
+
+    df3 = pd.DataFrame(data1,columns=Gender_field)
+    df5 = df5.append(df3)
     
+    df5 = df5.drop_duplicates(subset=["Id"],keep='last')
+
+    df5 = df5[Gender_field]
     df1 = df1[fields_details]
     df = df[fields]
 
@@ -781,6 +804,7 @@ def updateData(BloodGroup,Age,Height,Weight):
 
     df.to_csv(file_id.User_info())
     df1.to_csv(file_id.details())
+    df5.to_csv(file_id.genderData())
 
 # function to read all the data of the user and send a dict for the profile page
 def retriveData():
@@ -793,11 +817,14 @@ def retriveData():
     df = pd.read_csv(file_id.details())
     df = df[fields_details]
     df = df.loc[df['ID'] == session['Id']]
-    
+    df1 = pd.read_csv(file_id.genderData())
+    df1.loc[df1['Id']==session['Id']]
+    gender = list(df1['Gender'])[0]
     weight = list(df['weight'])[0]
     age = list(df['age'])[0]
     height = list(df['height'])[0]
     blood = list(df['blood group'])[0]
+    data['Gender'] = gender
     data['Weight'] = weight
     data['Height'] = height
     data['Age'] = age
