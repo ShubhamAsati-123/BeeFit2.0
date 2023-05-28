@@ -172,27 +172,27 @@ section .cards .text-card{
 }
 
 #card1{
-  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/Aerobic.jpg");
+  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/Aerobic.jpg");
   background-size: cover;
 }
 #card2{
-  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/Resistancetraining.jpg");
+  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/Resistancetraining.jpg");
   background-size: cover;
 }
 #card3{
-  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/Circuit\ Training.jpg");
+  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/Circuit\ Training.jpg");
   background-size: cover;
 }
 #card4{
-  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/Flexibility.jpg");
+  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/Flexibility.jpg");
   background-size: cover;
 }
 #card5{
-  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/High\ Intensity.jpg");
+  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/High\ Intensity.jpg");
   background-size: cover;
 }
 #card6{
-  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/Steadystatecardio.jpg");
+  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/Steadystatecardio.jpg");
   background-size: cover;
 }
 
