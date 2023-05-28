@@ -174,35 +174,35 @@ section .cards .text-card{
 }
 
 #card1{
-  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/AtkinsDiet.jpg");
+  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/AtkinsDiet.jpg");
   background-size: cover;
 }
 #card2{
-  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/Mediterranean-diet.jpg");
+  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/Mediterranean-diet.jpg");
   background-size: cover;
 }
 #card3{
-  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/vegan-diet.png");
+  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/vegan-diet.png");
   background-size: cover;
 }
 #card4{
-  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/Dash_Diet.jpeg");
+  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/Dash_Diet.jpeg");
   background-size: cover;
 }
 #card5{
-  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/paleo-diet1.jpg");
+  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/paleo-diet1.jpg");
   background-size: cover;
 }
 #card6{
-  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/whole-30.jpg");
+  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/whole-30.jpg");
   background-size: cover;
 }
 #card7{
-  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/Zone\ Diet.png");
+  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/Zone\ Diet.png");
   background-size: cover;
 }
 #card8{
-  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/Mind-Diet.jpg");
+  background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/Mind-Diet.jpg");
   background-size: cover;
 }
 
@@ -338,7 +338,6 @@ html {
 .loader::after {
   content: "";
   
- background: url(Images/wired-outline-1186-honeycombs.gif);
 }
 .ourteambtn{
   text-decoration: none;
