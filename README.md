@@ -17,7 +17,7 @@ __To run Server__
     
 __Features__
 
-##front page photo upload
+<img src="readmeImage.png">
 
 Exercise--> provides users with a wide range of fitness related instructional videos(including yoga) to allow user to
 create and personalise a exercise routine for themselves.
