@@ -700,7 +700,7 @@ def logout():
     session.pop('Id',None)
     session.pop('article',None)
     session.pop('date',None)
-    return redirect(url_for('SignIn_page'))
+    return redirect(url_for('landing_page'))
 
 
 # function to create an account
