@@ -976,6 +976,7 @@ input:checked ~ .tab-content {
   justify-content: center;
   background: #ffffff;
   transition: opacity 1s, visibility 1s;
+  z-index: 100;
 }
 
 .loadIt--hidden {
