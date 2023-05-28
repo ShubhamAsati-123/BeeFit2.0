@@ -16,9 +16,9 @@
     /* font-size: 0.6em; */
   }
   select{
-    padding: 0.5em 2em;
+    padding: 0.5em 4.5em;
     border-radius: 5px;
-    font-size: 1.2em;
+    font-size: 0.9em;
   }
   .header{
     background: black;
@@ -280,3 +280,4 @@ html {
   color: white;
 
 }
+
