@@ -172,27 +172,27 @@ margin-top: 5em;
 }
 
 #card1{
-background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/Chest.jpg");
+background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/Chest.jpg");
 background-size: cover;
 }
 #card2{
-background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/Back.jpg");
+background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/Back.jpg");
 background-size: cover;
 }
 #card3{
-background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/Shoulder.jpg");
+background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/Shoulder.jpg");
 background-size: cover;
 }
 #card4{
-background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/Arm.jpg");
+background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/Arm.jpg");
 background-size: cover;
 }
 #card5{
-background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/Leg.jpg");
+background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/Leg.jpg");
 background-size: cover;
 }
 #card6{
-background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("Images/Abs.jpg");
+background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)), url("images/Abs.jpg");
 background-size: cover;
 }
 
